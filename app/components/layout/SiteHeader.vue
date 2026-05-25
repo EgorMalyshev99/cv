@@ -17,7 +17,7 @@
         <a href="#stack" class="hover:text-foreground transition">{{ t('nav.stack') }}</a>
         <a href="#contact" class="hover:text-foreground transition">{{ t('nav.contact') }}</a>
         <a
-          :href="cvUrl"
+          href="/Malyshev_E_M_fullstack_cv.pdf"
           download
           class="hover:text-foreground flex items-center gap-1.5 transition"
           :aria-label="t('nav.downloadCv')"
@@ -45,7 +45,5 @@ import LocaleSwitcher from '@/components/LocaleSwitcher.vue'
 import ThemeToggle from '@/components/ThemeToggle.vue'
 import ContactDialog from '@/components/ContactDialog.vue'
 
-const { t, locale } = useI18n()
-
-const cvUrl = computed(() => (locale.value === 'ru' ? '/Malyshev_E_M_cv_ru.pdf' : '/Malyshev_E_M_cv_en.pdf'))
+const { t } = useI18n()
 </script>

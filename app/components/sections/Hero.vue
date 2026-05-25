@@ -39,7 +39,7 @@
             <a href="#cases">{{ t('hero.ctaSecondary') }}</a>
           </Button>
           <Button as-child variant="ghost" size="lg">
-            <a :href="cvUrl" download class="inline-flex items-center gap-2">
+            <a href="/Malyshev_E_M_fullstack_cv.pdf" download class="inline-flex items-center gap-2">
               <PhDownloadSimple :size="16" />
               {{ t('hero.ctaDownloadCv') }}
             </a>
@@ -66,8 +66,6 @@ import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
 import { useTheme } from '@/composables/useTheme'
 import { vFadeUp } from '@/composables/useFadeUp'
 
-const { t, locale } = useI18n()
+const { t } = useI18n()
 const { isDark } = useTheme()
-
-const cvUrl = computed(() => (locale.value === 'ru' ? '/Malyshev_E_M_cv_ru.pdf' : '/Malyshev_E_M_cv_en.pdf'))
 </script>
