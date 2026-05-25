@@ -1,8 +1,15 @@
 <template>
-  <Button variant="ghost" size="icon" :aria-label="isDark ? t('theme.light') : t('theme.dark')" @click="toggleTheme()">
-    <PhSun v-if="isDark" :size="16" />
-    <PhMoon v-else :size="16" />
-  </Button>
+  <ClientOnly>
+    <Button
+      variant="ghost"
+      size="icon"
+      :aria-label="isDark ? t('theme.light') : t('theme.dark')"
+      @click="toggleTheme()"
+    >
+      <PhSun v-if="isDark" :size="16" />
+      <PhMoon v-else :size="16" />
+    </Button>
+  </ClientOnly>
 </template>
 
 <script setup lang="ts">

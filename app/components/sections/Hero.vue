@@ -46,13 +46,15 @@
           </Button>
         </div>
       </div>
-      <div v-fade-up class="relative flex items-center justify-center">
-        <img
-          :src="isDark ? '/img/hero-dark.png' : '/img/hero-light.png'"
-          :alt="t('hero.photoAlt')"
-          class="h-auto max-w-full object-contain object-center"
-        />
-      </div>
+      <ClientOnly>
+        <div v-fade-up class="relative flex items-center justify-center">
+          <img
+            :src="isDark ? '/img/hero-dark.png' : '/img/hero-light.png'"
+            :alt="t('hero.photoAlt')"
+            class="h-auto max-w-full object-contain object-center"
+          />
+        </div>
+      </ClientOnly>
     </div>
   </section>
 </template>
