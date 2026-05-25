@@ -1,11 +1,11 @@
 // @ts-check
-import importX from 'eslint-plugin-import-x'
+import { flatConfigs } from 'eslint-plugin-import-x'
 import eslintConfigPrettier from 'eslint-config-prettier'
-import withNuxt from './.nuxt/eslint.config.mjs'
+import nuxtEslintConfig from './.nuxt/eslint.config.mjs'
 
-export default withNuxt(
-  importX.flatConfigs.recommended,
-  importX.flatConfigs.typescript,
+export default nuxtEslintConfig(
+  flatConfigs.recommended,
+  flatConfigs.typescript,
 
   {
     settings: {

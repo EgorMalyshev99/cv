@@ -58,6 +58,10 @@ export default defineNuxtConfig({
     head: {
       htmlAttrs: { lang: 'ru' },
       link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+      meta: [
+        { name: 'yandex-verification', content: process.env.NUXT_PUBLIC_YANDEX_VERIFICATION || '' },
+        { name: 'google-site-verification', content: process.env.NUXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '' },
+      ],
     },
   },
 

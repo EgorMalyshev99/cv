@@ -1,11 +1,11 @@
-import posthog from 'posthog-js'
+import posthogJs from 'posthog-js'
 
 export default defineNuxtPlugin({
   name: 'posthog',
   setup() {
     const config = useRuntimeConfig()
 
-    const posthogClient = posthog.init(config.public.posthogKey as string, {
+    const posthogClient = posthogJs.init(config.public.posthogKey as string, {
       api_host: config.public.posthogHost as string,
       capture_pageview: false,
       capture_pageleave: true,
@@ -16,7 +16,7 @@ export default defineNuxtPlugin({
 
     const router = useRouter()
     router.afterEach(() => {
-      posthog.capture('$pageview', { $current_url: window.location.href })
+      posthogJs.capture('$pageview', { $current_url: window.location.href })
     })
 
     return {
