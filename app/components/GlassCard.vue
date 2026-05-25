@@ -15,6 +15,6 @@ const props = withDefaults(
   }>(),
   {
     tag: 'div',
-  },
+  }
 )
 </script>

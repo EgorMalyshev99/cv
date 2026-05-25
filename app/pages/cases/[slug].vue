@@ -3,7 +3,8 @@
     <div class="container">
       <NuxtLink
         to="/"
-        class="text-muted-foreground hover:text-foreground mb-8 inline-flex items-center gap-1.5 text-sm transition-colors"
+        class="text-muted-foreground hover:text-foreground mb-8 inline-flex items-center gap-1.5 text-sm
+          transition-colors"
       >
         <PhArrowLeft :size="16" />
         {{ t('case.back') }}
@@ -25,7 +26,8 @@
           :href="caseEntry.companyUrl"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-muted-foreground hover:text-accent mt-5 inline-flex items-center gap-1.5 text-sm transition-colors"
+          class="text-muted-foreground hover:text-accent mt-5 inline-flex items-center gap-1.5 text-sm
+            transition-colors"
         >
           {{ caseEntry.companyUrl.replace('https://', '') }}
           <PhArrowSquareOut :size="13" aria-hidden="true" />
@@ -122,14 +124,14 @@ const caseDescription = computed(() =>
         caseTitle: caseTitle.value,
         company: t(`cases.list.${slug.value}.company`),
       })
-    : '',
+    : ''
 )
 const caseKeywords = computed(() =>
   caseEntry.value
     ? t('seo.case.keywords', {
         company: t(`cases.list.${slug.value}.company`),
       })
-    : '',
+    : ''
 )
 
 const caseSchema = computed(() => {
@@ -175,8 +177,7 @@ useSeoMeta({
   ogUrl: () => pageUrl.value,
   ogSiteName: () => t('seo.siteName'),
   ogLocale: () => ogLocale.value,
-  ogImage: () =>
-    caseEntry.value ? `${baseUrl.value}${caseEntry.value.image}` : `${baseUrl.value}/img/hero-dark.png`,
+  ogImage: () => (caseEntry.value ? `${baseUrl.value}${caseEntry.value.image}` : `${baseUrl.value}/img/hero-dark.png`),
   twitterCard: 'summary_large_image',
   twitterTitle: () => (caseEntry.value ? caseTitle.value : ''),
   twitterDescription: () => caseDescription.value,

@@ -9,7 +9,6 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxt/eslint',
-    '@nuxt/fonts',
     '@nuxt/hints',
     '@nuxt/image',
     '@nuxt/scripts',
@@ -27,7 +26,7 @@ export default defineNuxtConfig({
     port: Number(process.env.NUXT_SERVER_PORT) || 3000,
   },
 
-  css: ['~/assets/css/tailwind.css'],
+  css: ['~/assets/fonts/inter.css', '~/assets/css/tailwind.css'],
 
   vite: {
     plugins: [tailwindcss()],

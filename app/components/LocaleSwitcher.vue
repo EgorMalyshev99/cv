@@ -7,7 +7,7 @@
       :class="
         cn(
           'rounded-full px-2.5 py-1 text-xs font-medium transition',
-          locale === loc ? 'bg-background text-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground',
+          locale === loc ? 'bg-background text-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'
         )
       "
       @click="setLocale(loc)"

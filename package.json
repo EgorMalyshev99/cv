@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "@nuxt/eslint": "1.15.2",
-    "@nuxt/fonts": "0.14.0",
     "@nuxt/hints": "1.1.2",
     "@nuxt/image": "2.0.0",
     "@nuxt/scripts": "1.1.1",
