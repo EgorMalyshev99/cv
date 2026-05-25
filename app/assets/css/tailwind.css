@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+@theme inline {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --font-heading: var(--font-sans);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: #f7f8fb;
+  --foreground: #0e1116;
+  --card: #ffffff;
+  --card-foreground: #0e1116;
+  --popover: #ffffff;
+  --popover-foreground: #0e1116;
+  --primary: #0e1116;
+  --primary-foreground: #f7f8fb;
+  --secondary: #eef1f6;
+  --secondary-foreground: #0e1116;
+  --muted: #eef1f6;
+  --muted-foreground: #5c6578;
+  --accent: #4f6bff;
+  --accent-foreground: #ffffff;
+  --destructive: #dc2626;
+  --border: #e2e6ee;
+  --input: #e2e6ee;
+  --ring: #9bb0d4;
+  --accent-2: #0ab6d6;
+  --accent-3: #6a4fe8;
+  --glow-1: #4f6bff;
+  --glow-2: #0ab6d6;
+}
+
+.dark {
+  --background: #0b0d12;
+  --foreground: #e6e8ee;
+  --card: #11141b;
+  --card-foreground: #e6e8ee;
+  --popover: #11141b;
+  --popover-foreground: #e6e8ee;
+  --primary: #e6e8ee;
+  --primary-foreground: #0b0d12;
+  --secondary: #1a1e27;
+  --secondary-foreground: #e6e8ee;
+  --muted: #1a1e27;
+  --muted-foreground: #9aa3b5;
+  --accent: #7aa2ff;
+  --accent-foreground: #0b0d12;
+  --destructive: #f87171;
+  --border: #1f2530;
+  --input: #1f2530;
+  --ring: #3b4a6b;
+  --accent-2: #5ee3ff;
+  --accent-3: #9f8cff;
+  --glow-1: #7aa2ff;
+  --glow-2: #5ee3ff;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  img {
+    @apply h-auto max-w-full;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply border-border bg-card/70 dark:bg-card/40 rounded-2xl border shadow-[0_1px_0_0_rgba(255,255,255,0.04)_inset]
+      backdrop-blur-xl;
+  }
+
+  .text-gradient {
+    background: linear-gradient(90deg, var(--accent), var(--accent-2), var(--accent-3));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .bg-grid {
+    background-image: radial-gradient(circle, var(--border) 1px, transparent 1px);
+    background-size: 24px 24px;
+    mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+    opacity: 0.35;
+  }
+
+  .cta-glow {
+    box-shadow:
+      0 0 0 1px var(--accent),
+      0 12px 40px -10px color-mix(in srgb, var(--accent) 45%, transparent);
+    animation: cta-pulse 4s ease-in-out infinite;
+  }
+
+  .glow-blob {
+    animation: drift 18s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .glow-blob-delayed {
+    animation: drift 22s ease-in-out infinite reverse;
+    will-change: transform;
+  }
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(3%, -2%) scale(1.05);
+  }
+  66% {
+    transform: translate(-2%, 3%) scale(0.98);
+  }
+}
+
+@keyframes cta-pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 1px var(--accent),
+      0 12px 40px -10px color-mix(in srgb, var(--accent) 45%, transparent);
+  }
+  50% {
+    box-shadow:
+      0 0 0 1px var(--accent),
+      0 16px 48px -8px color-mix(in srgb, var(--accent) 55%, transparent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glow-blob,
+  .glow-blob-delayed,
+  .cta-glow {
+    animation: none;
+  }
+}

@@ -1,0 +1,375 @@
+{
+  "seo": {
+    "siteName": "Egor Malyshev · Frontend Developer",
+    "home": {
+      "title": "Frontend Developer for SaaS, dashboards, and product teams",
+      "description": "Hire a Frontend Developer: I help HR, CTOs, and business owners speed up delivery and reduce risk with scalable Vue/React and TypeScript architecture.",
+      "ogTitle": "Frontend Developer for SaaS and product teams",
+      "ogDescription": "Frontend portfolio with case studies in dashboards, real-time UX, architecture, monorepos, and legacy migrations.",
+      "keywords": "frontend developer, hire frontend developer, remote frontend developer, vue developer, react developer, typescript developer, dashboard frontend, saas frontend, frontend portfolio"
+    },
+    "case": {
+      "titleSuffix": "Case study",
+      "description": "Case study \"{caseTitle}\" for {company}: frontend architecture, product delivery, data-heavy interfaces, and engineering practices that support business growth.",
+      "keywords": "frontend case study, frontend developer portfolio, {company}, frontend architecture, dashboard development, typescript, vue, react, product development"
+    },
+    "person": {
+      "jobTitle": "Frontend Developer",
+      "description": "Frontend developer with 6+ years in SaaS and dashboard products. I help teams build scalable interfaces and predictable delivery."
+    }
+  },
+  "nav": {
+    "cases": "Cases",
+    "stack": "Stack",
+    "contact": "Contact",
+    "email": "Email me",
+    "downloadCv": "Download CV"
+  },
+  "hero": {
+    "eyebrow": "Frontend Developer / Vue · React · TypeScript",
+    "fullName": "Egor Malyshev",
+    "fullRole": "Frontend Developer",
+    "photoAlt": "Frontend Developer portrait",
+    "title": "I accelerate product growth with chaos-free frontend delivery",
+    "lead": "I design and build frontend systems for SaaS and dashboard products: fast feature delivery today, maintainable architecture for tomorrow.",
+    "body": "6+ years of commercial experience with TypeScript, Vue/Nuxt, React/Next.js, FSD, monorepos, real-time interfaces, and design systems.",
+    "support": "I focus on predictable delivery and product quality: clear architecture, fewer regressions, and faster feature rollouts.",
+    "meta": "Open to product teams and outsource projects · Remote / International",
+    "ctaPrimary": "Discuss collaboration",
+    "ctaSecondary": "View case studies",
+    "ctaDownloadCv": "Download CV"
+  },
+  "positioning": {
+    "eyebrow": "Positioning",
+    "title": "A frontend partner for product teams",
+    "subtitle": "I work at the intersection of engineering and product, turning business goals into reliable frontend delivery.",
+    "items": [
+      "Fast product onboarding with focus on high-impact priorities and measurable outcomes",
+      "Scalable frontend architecture that supports team growth without chaos",
+      "Faster delivery through reusable UI, design systems, and shared engineering patterns",
+      "Strong execution in data-heavy and real-time interfaces for SaaS/dashboard domains",
+      "Predictable quality with tests, code review, and release discipline"
+    ]
+  },
+  "expertise": {
+    "eyebrow": "Core expertise",
+    "title": "Where I deliver the most value",
+    "subtitle": "Capabilities that help CTOs and hiring managers de-risk frontend hiring.",
+    "items": [
+      {
+        "title": "Dashboard systems",
+        "description": "I build complex working interfaces: roles, filters, tables, charts, and decision-critical user flows."
+      },
+      {
+        "title": "Landing pages & websites",
+        "description": "I deliver high-quality landing pages and websites with strong conversion structure, pixel-accurate UI, performance, and responsive behavior."
+      },
+      {
+        "title": "Frontend architecture",
+        "description": "I create code structures that make scaling, onboarding, and long-term ownership easier."
+      },
+      {
+        "title": "Monorepo & design system",
+        "description": "I set up monorepo and shared UI foundations so teams ship faster with consistent quality."
+      },
+      {
+        "title": "Real-time & data UI",
+        "description": "I optimize data-heavy and real-time screens for responsiveness, clarity, and reliability."
+      },
+      {
+        "title": "Legacy migration",
+        "description": "I run incremental legacy migrations without pausing feature delivery or taking big-bang risks."
+      },
+      {
+        "title": "Quality & delivery",
+        "description": "I maintain engineering discipline that keeps releases stable and progress predictable."
+      },
+      {
+        "title": "Code review & mentoring",
+        "description": "I run code reviews and mentoring practices that improve code quality, onboarding speed, and engineering autonomy."
+      }
+    ]
+  },
+  "cases": {
+    "section": {
+      "eyebrow": "Portfolio",
+      "title": "Selected cases",
+      "subtitle": "Examples of projects where I worked on frontend architecture, dashboard systems, real-time functionality, monorepos, design systems, and legacy frontend migration to a modern stack.",
+      "cta": "Open case"
+    },
+    "stackGroups": {
+      "core": "Core",
+      "architecture": "Architecture",
+      "data": "Data & UI",
+      "platform": "Platform",
+      "ops": "Infrastructure"
+    },
+    "list": {
+      "rizzult-dashboard": {
+        "title": "Scalable dashboard platform",
+        "company": "Rizzult",
+        "stackLine": "Vue / Nuxt / TypeScript",
+        "preview": "Development of a B2B performance creator platform for brands and agencies: from a Vue dashboard core to a Nuxt multi-page website with a BFF layer. The product focused on measurable marketing outcomes (ROAS, clicks, installs, sales), creator campaign automation, and transparent analytics for business teams.",
+        "hero": {
+          "eyebrow": "Rizzult · Dashboard platform",
+          "title": "Scalable dashboard platform",
+          "lead": "Product dashboard system for data, roles, and user scenarios in a scalable monorepo."
+        },
+        "context": "Rizzult is a B2B SaaS performance influencer marketing platform for brands, agencies, and app/e-commerce teams. The product needed a unified system where businesses could run controllable creator campaigns with pay-for-results economics rather than pure reach: multi-country launch flows, transparent action tracking (clicks, installs, sales), ROAS analytics, and scalable operations without expanding the marketing team.",
+        "role": [
+          "Frontend Developer on the product team",
+          "Development and scaling of the B2B dashboard for Brands / Agencies / Marketers",
+          "Design of FSD architecture and shared modules in the monorepo",
+          "Implementation of data-heavy screens: tables, reports, funnels, and KPI cards",
+          "Integration of real-time and analytics scenarios for performance marketing",
+          "Code review and mentoring inside the frontend team"
+        ],
+        "tasks": [
+          "Scale the B2B dashboard for business owners, marketers, and agencies",
+          "Develop the multi-page Nuxt product website with a BFF layer",
+          "Establish FSD architecture and shared layers in Turborepo",
+          "Build unified data flows for clicks, installs, sales, and ROAS",
+          "Implement real-time monitoring with TanStack Query/Table, Highcharts, and Socket.io",
+          "Support GitLab CI/CD and improve release stability"
+        ],
+        "solution": [
+          "Feature-Sliced Design with clear boundaries and ownership",
+          "Turborepo for shared packages, configs, and reusable UI",
+          "Nuxt + BFF architecture for consistent data across landing pages and dashboard",
+          "TanStack Query/Table + Highcharts for robust data-heavy interfaces",
+          "Socket.io for live updates on critical business metrics",
+          "GSAP plus Web Vitals/SEO optimization for public pages",
+          "GitLab CI/CD + Vitest for reliable delivery and regression control"
+        ],
+        "delivered": [
+          "B2B dashboard modules for launching and controlling creator campaigns",
+          "Multi-page Nuxt website with BFF integration",
+          "KPI widgets and reports for clicks, sales, installs, and ROAS",
+          "Real-time updates for critical metrics without page reload",
+          "Unified UI/data patterns in the monorepo with lower duplication",
+          "GitLab CI/CD pipeline and Vitest coverage for key flows"
+        ],
+        "impact": [
+          "Platform scale support: 100,000+ registered influencers",
+          "Business-proof campaign tracking scenarios: 37,000,000+ performance actions for brands",
+          "Reliable analytics foundation for campaign operations: 6 TB ClickHouse + 100 TB media storage",
+          "Strong channel economics reflected in platform outcomes: around 677% average ROAS",
+          "Interfaces helped business teams launch campaigns faster and run them with lower operational overhead"
+        ]
+      },
+      "interactive-form-ai-dashboard": {
+        "title": "AI startup dashboard & landing",
+        "company": "Interactive Form",
+        "stackLine": "React / Next.js / TypeScript",
+        "preview": "Frontend development for an AI no-code SaaS focused on lead generation: landing, interactive form builder, and dashboard for leads and integrations. The product helps businesses launch branded forms in minutes and improve conversion without engineering involvement.",
+        "hero": {
+          "eyebrow": "Interactive Form · AI startup",
+          "title": "AI startup dashboard & landing",
+          "lead": "Landing and dashboard for an AI product: user flows, settings, and data-driven interfaces in an NX monorepo."
+        },
+        "context": "Interactive Form is a product that generates interactive AI forms from a short business description or a website link. The platform goal was to turn traffic into qualified leads faster via personalized question flows, conversion analytics, and no-code website integration (embed + Google Tag Manager).",
+        "role": [
+          "Frontend Developer (React/Next.js)",
+          "Development of landing, form generation flow, and dashboard application",
+          "FSD module design in NX monorepo",
+          "Implementation of the user flow from signup to first leads",
+          "Forms, validation, integrations, and state management for product scenarios"
+        ],
+        "tasks": [
+          "Build landing, onboarding, and dashboard in one NX monorepo",
+          "Implement AI form generation from prompt or website URL",
+          "Set up lead and API workflows with TanStack Query/Table",
+          "Introduce Zod validation for forms and server responses",
+          "Add no-code integrations: Google Analytics, TikTok Pixel, Facebook Pixel, and email",
+          "Use Zustand where client-side state requires explicit control"
+        ],
+        "solution": [
+          "Next.js App Router for landing and dashboard flows",
+          "NX monorepo with shared UI, API client, and utility libraries",
+          "FSD layers for feature isolation and entity reuse",
+          "Zod + react-hook-form for type-safe dynamic forms",
+          "TanStack Query for predictable server state handling",
+          "Conversion tracking integrations and UI flows optimized for fast activation"
+        ],
+        "delivered": [
+          "Product landing with clear value proposition",
+          "AI form creation flow: business prompt -> ready form -> embed code",
+          "Dashboard for lead tracking, form management, and integrations",
+          "Integration screens for analytics, ad pixels, and email notifications",
+          "Shared form patterns with typed validation",
+          "Modular architecture for parallel feature development"
+        ],
+        "impact": [
+          "Reduced time-to-lead: users can go from signup to first leads in minutes",
+          "Lower launch friction for non-technical teams via no-code form embedding",
+          "Fewer form-related issues through schema-driven validation and type-safe API contracts",
+          "Strong foundation to scale AI features and pricing tiers without architectural rewrites",
+          "Clear structure for code review and team collaboration in a growing product team"
+        ]
+      },
+      "perfluence-legacy-migration": {
+        "title": "Legacy frontend migration to a modern stack",
+        "company": "Perfluence",
+        "stackLine": "React / Next.js / TypeScript",
+        "preview": "Frontend development for a leading influencer/performance marketing platform in Russia and CIS: products for creators and brands, dashboard systems, and Telegram WebView flows. Participated in incremental migration from legacy frontend (PHP templates, jQuery, SCSS) to React/Next.js/TypeScript without pausing delivery.",
+        "hero": {
+          "eyebrow": "Perfluence · Product & migration",
+          "title": "Legacy frontend migration to a modern stack",
+          "lead": "Incremental transition from PHP/jQuery/SCSS to React/Next.js and TypeScript while continuously shipping product features."
+        },
+        "context": "Perfluence is a large platform for creators, Telegram channels, and brands in Russia and CIS with a pay-for-results model. During product growth, the platform reported 518,000 creators and RUB 6.9B paid out to creators. The challenge was to keep shipping new B2B/B2C functionality while migrating legacy frontend to a modern stack without disrupting releases.",
+        "role": [
+          "Frontend Developer on the product team",
+          "Product interface development for creators and brands",
+          "Dashboard and Telegram WebView monetization flow development",
+          "Participation in legacy migration strategy and implementation",
+          "REST API integration, analytics, and data visualization"
+        ],
+        "tasks": [
+          "Ship new React/Next.js features alongside legacy code",
+          "Migrate critical jQuery/PHP screens to TypeScript",
+          "Develop dashboard flows for funnel, payout, and campaign analytics",
+          "Support Telegram WebView and creator monetization scenarios",
+          "Account for ad-labeling and legal transparency requirements",
+          "Support GitLab CI/CD and test critical flows"
+        ],
+        "solution": [
+          "Strangler pattern: new React modules, legacy isolated incrementally",
+          "Next.js for consistent routing and required SSR/SSG scenarios",
+          "Bootstrap UI + SCSS for legacy interface maintenance",
+          "Mantine UI for modern modules and faster delivery",
+          "REST API layer and Highcharts for campaign and payout analytics",
+          "Docker + GitLab CI/CD + Jest for stable builds and quality control"
+        ],
+        "delivered": [
+          "Dashboard screens for creators, brands, and internal teams",
+          "Telegram WebView interfaces for monetization scenarios",
+          "Migrated key legacy pages without a big-bang rewrite",
+          "Charts and reports for campaign efficiency and payouts",
+          "Interfaces for offer showcases and promo mechanics",
+          "GitLab CI/CD pipeline and Jest coverage for critical modules"
+        ],
+        "impact": [
+          "Continuous feature delivery during migration",
+          "Product support at large audience and campaign scale",
+          "Reduced technical debt in critical user flows",
+          "More transparent and controllable analytics for the pay-for-results model",
+          "Improved maintainability and faster developer onboarding",
+          "Single modern stack for new product modules"
+        ]
+      }
+    },
+    "nav": {
+      "all": "All cases",
+      "prev": "Previous",
+      "next": "Next"
+    }
+  },
+  "case": {
+    "back": "Back",
+    "sections": {
+      "context": "Project context",
+      "role": "My role",
+      "tasks": "Key tasks",
+      "solution": "Technical approach",
+      "delivered": "What was delivered",
+      "impact": "Outcome",
+      "stack": "Tech stack"
+    }
+  },
+  "stack": {
+    "eyebrow": "Tech stack",
+    "title": "Tools & practices",
+    "subtitle": "Technologies I use daily in product teams.",
+    "groups": [
+      {
+        "title": "Core",
+        "items": ["TypeScript", "Vue 3", "Nuxt", "React", "Next.js"]
+      },
+      {
+        "title": "Architecture",
+        "items": ["FSD", "Turborepo", "NX", "Monorepo", "Design System"]
+      },
+      {
+        "title": "Data & UI",
+        "items": ["TanStack Query", "TanStack Table", "Highcharts", "Socket.io", "Zod", "Zustand"]
+      },
+      {
+        "title": "Styling & Quality",
+        "items": [
+          "SCSS",
+          "Bootstrap UI",
+          "Mantine UI",
+          "GSAP",
+          "Vitest",
+          "Jest",
+          "Code Review",
+          "Docker",
+          "GitLab CI/CD"
+        ]
+      }
+    ]
+  },
+  "principles": {
+    "eyebrow": "Working principles",
+    "title": "How I approach development",
+    "subtitle": "My default operating model for product teams and outsource projects.",
+    "items": [
+      {
+        "title": "Architecture for growth",
+        "description": "Code structure that scales with new features without chaos."
+      },
+      {
+        "title": "Product thinking",
+        "description": "I focus on business impact and user value, not just ticket completion."
+      },
+      {
+        "title": "Reuse over duplication",
+        "description": "Design system and shared UI instead of copy-paste components."
+      },
+      {
+        "title": "Clear communication",
+        "description": "I keep PM, design, and backend aligned with transparent timelines, risks, and trade-offs."
+      }
+    ]
+  },
+  "international": {
+    "eyebrow": "International teams",
+    "title": "Comfortable in remote and global product teams",
+    "subtitle": "Communication, ownership, and process maturity for distributed collaboration.",
+    "items": [
+      "English B2: fluent spoken and written communication with teams and stakeholders",
+      "Remote-ready workflow: async updates, documentation, code review, and clear status ownership",
+      "Strong understanding of product and engineering culture in international SaaS teams",
+      "Flexible with time zones and collaboration formats"
+    ],
+    "badge": "Open to remote & international opportunities"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's discuss how I can strengthen your team",
+    "subtitle": "Open to full-time and outsource collaborations. I reply to HR, CTO, and hiring manager requests within 24 hours.",
+    "cta": "Get in touch",
+    "copy": "Copy email",
+    "copied": "Copied",
+    "dialog": {
+      "title": "Contact me",
+      "subtitle": "Choose a convenient way to get in touch",
+      "emailLabel": "Email",
+      "copyEmail": "Copy",
+      "copied": "Copied!"
+    }
+  },
+  "footer": {
+    "rights": "Frontend Developer Portfolio",
+    "built": "Vue 3 · TypeScript · Tailwind"
+  },
+  "theme": {
+    "light": "Light theme",
+    "dark": "Dark theme"
+  },
+  "locale": {
+    "ru": "RU",
+    "en": "EN"
+  }
+}
