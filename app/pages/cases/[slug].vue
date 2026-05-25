@@ -99,7 +99,7 @@ import { useSiteUrl } from '@/composables/useSiteUrl'
 import { vFadeUp } from '@/composables/useFadeUp'
 
 const route = useRoute()
-const { t, tm, locale } = useI18n()
+const { t, tm, rt, locale } = useI18n()
 const { baseUrl, pageUrl } = useSiteUrl()
 
 const slug = computed(() => route.params.slug as CaseSlug)
@@ -109,11 +109,11 @@ if (!getCase(route.params.slug as string)) {
   throw createError({ statusCode: 404, statusMessage: 'Case not found', fatal: true })
 }
 
-const roleItems = computed(() => tm(`cases.list.${slug.value}.role`) as string[])
-const taskItems = computed(() => tm(`cases.list.${slug.value}.tasks`) as string[])
-const solutionItems = computed(() => tm(`cases.list.${slug.value}.solution`) as string[])
-const deliveredItems = computed(() => tm(`cases.list.${slug.value}.delivered`) as string[])
-const impactItems = computed(() => tm(`cases.list.${slug.value}.impact`) as string[])
+const roleItems = computed(() => (tm(`cases.list.${slug.value}.role`) as string[]).map((item) => rt(item)))
+const taskItems = computed(() => (tm(`cases.list.${slug.value}.tasks`) as string[]).map((item) => rt(item)))
+const solutionItems = computed(() => (tm(`cases.list.${slug.value}.solution`) as string[]).map((item) => rt(item)))
+const deliveredItems = computed(() => (tm(`cases.list.${slug.value}.delivered`) as string[]).map((item) => rt(item)))
+const impactItems = computed(() => (tm(`cases.list.${slug.value}.impact`) as string[]).map((item) => rt(item)))
 
 const ogLocale = computed(() => (locale.value === 'ru' ? 'ru_RU' : 'en_US'))
 const alternateOgLocale = computed(() => (locale.value === 'ru' ? 'en_US' : 'ru_RU'))

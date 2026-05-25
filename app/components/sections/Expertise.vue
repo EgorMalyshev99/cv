@@ -42,8 +42,13 @@ interface ExpertiseItem {
   description: string
 }
 
-const { t, tm } = useI18n()
-const items = computed(() => tm('expertise.items') as ExpertiseItem[])
+const { t, tm, rt } = useI18n()
+const items = computed(() =>
+  (tm('expertise.items') as ExpertiseItem[]).map((item) => ({
+    title: rt(item.title),
+    description: rt(item.description),
+  }))
+)
 
 const expertiseIcons = [
   PhLayout,

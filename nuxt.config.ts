@@ -38,7 +38,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    name: 'Frontend Developer',
+    name: 'Fullstack Developer',
     url: process.env.NUXT_PUBLIC_SITE_URL || '',
   },
 

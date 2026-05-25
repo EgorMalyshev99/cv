@@ -1,12 +1,12 @@
 {
   "seo": {
-    "siteName": "Егор Малышев · Frontend Developer",
+    "siteName": "Егор Малышев · Fullstack Developer",
     "home": {
-      "title": "Frontend Developer для SaaS, dashboard и продуктовых команд",
-      "description": "Нанять Frontend Developer: помогаю HR, CTO и владельцам бизнеса ускорять delivery и снижать риски через масштабируемую frontend-архитектуру на Vue/React и TypeScript.",
-      "ogTitle": "Frontend Developer для SaaS и продуктовых команд",
-      "ogDescription": "Портфолио frontend-разработчика: кейсы по dashboard, real-time, архитектуре, monorepo и миграции legacy.",
-      "keywords": "frontend developer, фронтенд разработчик, нанять frontend developer, frontend developer remote, vue разработчик, react разработчик, typescript developer, dashboard frontend, saas frontend, frontend портфолио"
+      "title": "Fullstack Developer для SaaS, dashboard и продуктовых команд",
+      "description": "Нанять Fullstack Developer: помогаю HR, CTO и CEO ускорять delivery и снижать риски через сильный frontend и надежный backend для продуктовых сценариев.",
+      "ogTitle": "Fullstack Developer для SaaS и продуктовых команд",
+      "ogDescription": "Портфолио fullstack-разработчика: dashboard, real-time, архитектура, monorepo, AI-assisted workflows и legacy migration.",
+      "keywords": "fullstack developer, фронтенд бэкенд разработчик, нанять fullstack разработчика, vue разработчик, react разработчик, node.js разработчик, dashboard разработка, saas разработка, product development"
     },
     "case": {
       "titleSuffix": "Кейс",
@@ -14,8 +14,8 @@
       "keywords": "frontend кейс, кейс frontend разработчика, {company}, frontend architecture, dashboard разработка, typescript, vue, react, product development"
     },
     "person": {
-      "jobTitle": "Frontend Developer",
-      "description": "Frontend-разработчик с 6+ годами опыта в SaaS и dashboard-продуктах. Помогаю командам строить масштабируемые интерфейсы и предсказуемый delivery."
+      "jobTitle": "Fullstack Developer",
+      "description": "Fullstack-разработчик с 6+ годами опыта в SaaS и dashboard-продуктах. Помогаю командам строить масштабируемые интерфейсы и надежную серверную часть с предсказуемым delivery."
     }
   },
   "nav": {
@@ -26,14 +26,14 @@
     "downloadCv": "Скачать резюме"
   },
   "hero": {
-    "eyebrow": "Frontend Developer / Vue · React · TypeScript",
+    "eyebrow": "Fullstack Developer / Frontend 60% · Backend 40%",
     "fullName": "Егор Малышев",
-    "fullRole": "Frontend Developer",
-    "photoAlt": "Портрет Frontend Developer",
-    "title": "Делаю frontend, который драйвит рост бизнеса",
-    "lead": "Проектирую и развиваю frontend для SaaS и dashboard-продуктов: от быстрой поставки фич до устойчивой архитектуры на рост команды и нагрузки.",
-    "body": "6+ лет коммерческого опыта: TypeScript, Vue/Nuxt, React/Next.js, FSD, monorepo, real-time интерфейсы и дизайн-системы.",
-    "support": "Беру ответственность за качество и предсказуемый delivery: понятная архитектура, меньше регрессий, быстрее запуск новых фич.",
+    "fullRole": "Fullstack Developer",
+    "photoAlt": "Портрет Fullstack Developer",
+    "title": "Делаю продукт, который драйвит рост бизнеса",
+    "lead": "Проектирую и развиваю fullstack-решения для SaaS и dashboard-продуктов: от быстрого запуска фич на frontend до надежной backend-логики и устойчивой архитектуры на рост команды и нагрузки.",
+    "body": "6+ лет коммерческого опыта: TypeScript, Vue/Nuxt, React/Next.js, Node.js/NestJS, PHP/Yii2, FSD, monorepo, real-time интерфейсы и дизайн-системы.",
+    "support": "Закрываю end-to-end задачи: от UX и API-интеграций до backend-логики, ролей, прав доступа и устойчивого релизного процесса.",
     "meta": "Open to product teams and outsource projects · Remote / International",
     "ctaPrimary": "Обсудить сотрудничество",
     "ctaSecondary": "Посмотреть кейсы",
@@ -41,14 +41,87 @@
   },
   "positioning": {
     "eyebrow": "Позиционирование",
-    "title": "Frontend-партнёр для продуктовых команд",
-    "subtitle": "Работаю на стыке engineering и product: закрываю задачи бизнеса без компромисса по качеству кода.",
+    "title": "Fullstack-партнёр для продуктовых команд",
+    "subtitle": "Работаю на стыке engineering и product: закрываю задачи бизнеса end-to-end без компромисса по качеству.",
     "items": [
-      "Быстро вхожу в продуктовый контекст и фокусируюсь на задачах, влияющих на метрики",
-      "Строю масштабируемую frontend-архитектуру, которая упрощает рост команды",
-      "Ускоряю delivery через reusable UI, дизайн-систему и единые инженерные паттерны",
-      "Уверенно работаю с data-heavy и real-time интерфейсами в SaaS/dashboard-домене",
-      "Поддерживаю предсказуемое качество: тесты, code review, аккуратные релизы"
+      "Быстро вхожу в продуктовый контекст и фокусируюсь на задачах, влияющих на метрики бизнеса",
+      "Строю масштабируемую fullstack-архитектуру: сильный frontend, понятный API-слой и стабильный backend",
+      "Ускоряю delivery через reusable UI, shared-модули, monorepo и единые инженерные паттерны",
+      "Уверенно работаю с data-heavy и real-time сценариями, ролями и правами доступа в SaaS/dashboard-домене",
+      "Поддерживаю предсказуемое качество: тесты, code review, прозрачные релизы и контроль регрессий"
+    ]
+  },
+  "management": {
+    "eyebrow": "Менеджерские скиллы",
+    "title": "Как усиливаю команду, кроме кода",
+    "subtitle": "Беру ответственность за процессы, коммуникацию и инженерную культуру, чтобы команда двигалась быстрее и стабильнее.",
+    "items": [
+      {
+        "title": "Лидерство frontend-направления",
+        "description": "На последних проектах вел frontend-направление: держал архитектурный вектор, декомпозировал задачи и синхронизировал команду."
+      },
+      {
+        "title": "Code review как системный процесс",
+        "description": "Выстраиваю review-практики, которые повышают качество кода, снижают риск регрессий и ускоряют onboarding новых разработчиков."
+      },
+      {
+        "title": "Менторинг middle/junior",
+        "description": "Помогаю разработчикам расти через понятную обратную связь, совместные разборы решений и инженерные стандарты."
+      },
+      {
+        "title": "Коммуникация с бизнесом и продуктом",
+        "description": "Перевожу бизнес-цели в техплан: сроки, риски, trade-offs и реалистичные этапы delivery без хаоса."
+      }
+    ]
+  },
+  "aiSkills": {
+    "eyebrow": "AI скиллы",
+    "title": "Где AI реально ускоряет delivery",
+    "subtitle": "Использую AI как инженерный инструмент: системно, прозрачно и с контролем качества.",
+    "items": [
+      {
+        "title": "AI-assisted refactoring",
+        "description": "Ускоряю разбор legacy-кода, декомпозицию модулей и перенос повторяемой логики в reusable-слои."
+      },
+      {
+        "title": "AI-agent workflows",
+        "description": "Применяю агентные сценарии для рутинных задач: подготовка шаблонных модулей, проверка архитектурных ограничений, технические черновики."
+      },
+      {
+        "title": "Тесты и контроль регрессий",
+        "description": "Использую AI для подготовки тест-кейсов и проверки edge cases, после чего валидирую результат инженерно."
+      },
+      {
+        "title": "Техдока и проектные инструкции",
+        "description": "С помощью AI ускоряю создание и поддержку документации: правила, гайды, onboarding-материалы и рабочие playbook-и."
+      }
+    ]
+  },
+  "achievements": {
+    "eyebrow": "Ключевые достижения",
+    "title": "Результаты, которые можно измерить",
+    "subtitle": "Концентрируюсь на метриках, которые важны бизнесу: скорость, масштабируемость и эффективность команды.",
+    "items": [
+      {
+        "metric": "35-40%",
+        "title": "Ускорение разработки новых модулей",
+        "description": "После внедрения FSD и единых frontend-паттернов команда быстрее запускала новые разделы без роста хаоса."
+      },
+      {
+        "metric": "-30%",
+        "title": "Снижение дублирования в monorepo",
+        "description": "Вынес shared UI, типы и утилиты в отдельные пакеты, что упростило поддержку и ускорило релизы."
+      },
+      {
+        "metric": "40%",
+        "title": "Ускорение migration-потоков",
+        "description": "Через AI-assisted refactoring и reusable-компоненты сократил время миграции legacy dashboard-разделов."
+      },
+      {
+        "metric": "E2E ownership",
+        "title": "End-to-end зона ответственности",
+        "description": "Закрывал функциональность от интерфейсов и API-интеграций до backend-логики, прав доступа и стабильной поставки."
+      }
     ]
   },
   "expertise": {
@@ -117,7 +190,7 @@
         },
         "context": "Rizzult — B2B SaaS-платформа influencer marketing для брендов, агентств и e-commerce/app-команд. Нужна была единая система с оплатой за результат, а не за охват: запуск в нескольких странах, прозрачный учёт действий (клики, инсталлы, продажи), ROAS-аналитика и масштабирование без роста операционной нагрузки.",
         "role": [
-          "Frontend Developer в продуктовой команде",
+          "Fullstack Developer в продуктовой команде",
           "Разработка и развитие B2B dashboard для Brands / Agencies / Marketers",
           "Проектирование FSD-архитектуры и shared-модулей в monorepo",
           "Разработка data-heavy экранов: таблицы, отчёты, воронки, KPI-карточки",
@@ -169,7 +242,7 @@
         },
         "context": "Interactive Form — продукт для генерации интерактивных AI-форм из короткого описания бизнеса или ссылки на сайт. Цель платформы: быстро превращать трафик в лиды через персонализированные сценарии вопросов, аналитику конверсии и простую интеграцию на сайт без кода (embed и Google Tag Manager).",
         "role": [
-          "Frontend Developer (React/Next.js)",
+          "Fullstack Developer (React/Next.js)",
           "Разработка лендинга, генератора форм и dashboard-приложения",
           "Проектирование FSD-модулей в NX monorepo",
           "Реализация пользовательского потока: от signup до первых лидов",
@@ -219,7 +292,7 @@
         },
         "context": "Perfluence — крупная платформа для блогеров, Telegram-каналов и брендов в России и СНГ с моделью «оплата за результат». На момент развития продукта: 518 000 блогеров на платформе, 6.9 млрд ₽ выплат блогерам и десятки бренд-проектов. Требовалось развивать новые B2B/B2C сценарии и одновременно мигрировать legacy frontend на современный стек без потери скорости релизов.",
         "role": [
-          "Frontend Developer в продуктовой команде",
+          "Fullstack Developer в продуктовой команде",
           "Разработка продуктовых интерфейсов для блогеров и брендов",
           "Разработка dashboard и Telegram WebView сценариев монетизации",
           "Участие в стратегии и реализации legacy migration",
@@ -361,7 +434,7 @@
     }
   },
   "footer": {
-    "rights": "Frontend Developer Portfolio",
+    "rights": "Fullstack Developer Portfolio",
     "built": "Vue 3 · TypeScript · Tailwind"
   },
   "theme": {

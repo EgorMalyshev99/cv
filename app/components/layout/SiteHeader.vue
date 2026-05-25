@@ -3,12 +3,12 @@
     <div class="container flex h-16 items-center justify-between gap-4">
       <NuxtLink to="/" class="text-sm font-semibold tracking-tight md:text-base">
         <span class="md:hidden">
-          <span class="text-gradient">FE</span>
-          <span class="text-foreground"> Dev</span>
+          <span class="text-gradient">FSDev</span>
+          <span class="text-foreground"> - mobile</span>
         </span>
         <span class="hidden md:inline">
-          <span class="text-gradient">Frontend</span>
-          <span class="text-foreground"> Developer</span>
+          <span class="text-gradient">Fullstack</span>
+          <span class="text-foreground"> developer</span>
         </span>
       </NuxtLink>
 

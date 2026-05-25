@@ -32,8 +32,8 @@ import GlassCard from '@/components/GlassCard.vue'
 import SectionHeading from '@/components/layout/SectionHeading.vue'
 import { vFadeUp } from '@/composables/useFadeUp'
 
-const { t, tm } = useI18n()
-const items = computed(() => tm('positioning.items') as string[])
+const { t, tm, rt } = useI18n()
+const items = computed(() => (tm('positioning.items') as string[]).map((item) => rt(item)))
 
 const positioningIcons = [PhRocket, PhArrowsOut, PhPackage, PhDatabase, PhShieldCheck]
 </script>

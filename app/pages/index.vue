@@ -2,23 +2,27 @@
   <div>
     <Hero />
     <Positioning />
+    <ManagementSkills />
+    <AiSkills />
+    <Achievements />
     <Expertise />
     <FeaturedCases />
     <TechStack />
-    <Principles />
     <International />
     <ContactCta />
   </div>
 </template>
 
 <script setup lang="ts">
+import Achievements from '@/components/sections/Achievements.vue'
+import AiSkills from '@/components/sections/AiSkills.vue'
 import ContactCta from '@/components/sections/ContactCta.vue'
 import Expertise from '@/components/sections/Expertise.vue'
 import FeaturedCases from '@/components/sections/FeaturedCases.vue'
 import Hero from '@/components/sections/Hero.vue'
 import International from '@/components/sections/International.vue'
+import ManagementSkills from '@/components/sections/ManagementSkills.vue'
 import Positioning from '@/components/sections/Positioning.vue'
-import Principles from '@/components/sections/Principles.vue'
 import TechStack from '@/components/sections/TechStack.vue'
 import { useSiteUrl } from '@/composables/useSiteUrl'
 
@@ -38,7 +42,19 @@ const personSchema = computed(() => ({
   image: `${baseUrl.value}/me.jpg`,
   url: baseUrl.value,
   sameAs: [],
-  knowsAbout: ['Frontend Development', 'Vue', 'React', 'TypeScript', 'SaaS', 'Dashboard UI', 'Design Systems'],
+  knowsAbout: [
+    'Frontend Development',
+    'Backend Development',
+    'TypeScript',
+    'Vue',
+    'React',
+    'Node.js',
+    'NestJS',
+    'SaaS',
+    'Dashboard UI',
+    'Design Systems',
+    'AI-assisted Development',
+  ],
 }))
 
 const websiteSchema = computed(() => ({

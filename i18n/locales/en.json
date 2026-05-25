@@ -1,12 +1,12 @@
 {
   "seo": {
-    "siteName": "Egor Malyshev · Frontend Developer",
+    "siteName": "Egor Malyshev · Fullstack Developer",
     "home": {
-      "title": "Frontend Developer for SaaS, dashboards, and product teams",
-      "description": "Hire a Frontend Developer: I help HR, CTOs, and business owners speed up delivery and reduce risk with scalable Vue/React and TypeScript architecture.",
-      "ogTitle": "Frontend Developer for SaaS and product teams",
-      "ogDescription": "Frontend portfolio with case studies in dashboards, real-time UX, architecture, monorepos, and legacy migrations.",
-      "keywords": "frontend developer, hire frontend developer, remote frontend developer, vue developer, react developer, typescript developer, dashboard frontend, saas frontend, frontend portfolio"
+      "title": "Fullstack Developer for SaaS, dashboards, and product teams",
+      "description": "Hire a Fullstack Developer: I help HR, CTOs, and CEOs speed up delivery and reduce risk with strong frontend execution and reliable backend systems.",
+      "ogTitle": "Fullstack Developer for SaaS and product teams",
+      "ogDescription": "Fullstack portfolio with case studies in dashboards, real-time UX, architecture, monorepos, AI-assisted workflows, and legacy migrations.",
+      "keywords": "fullstack developer, hire fullstack developer, remote fullstack developer, vue developer, react developer, node.js developer, dashboard development, saas development, product development"
     },
     "case": {
       "titleSuffix": "Case study",
@@ -14,8 +14,8 @@
       "keywords": "frontend case study, frontend developer portfolio, {company}, frontend architecture, dashboard development, typescript, vue, react, product development"
     },
     "person": {
-      "jobTitle": "Frontend Developer",
-      "description": "Frontend developer with 6+ years in SaaS and dashboard products. I help teams build scalable interfaces and predictable delivery."
+      "jobTitle": "Fullstack Developer",
+      "description": "Fullstack developer with 6+ years in SaaS and dashboard products. I help teams build scalable interfaces, reliable backend logic, and predictable delivery."
     }
   },
   "nav": {
@@ -26,14 +26,14 @@
     "downloadCv": "Download CV"
   },
   "hero": {
-    "eyebrow": "Frontend Developer / Vue · React · TypeScript",
+    "eyebrow": "Fullstack Developer / Frontend 60% · Backend 40%",
     "fullName": "Egor Malyshev",
-    "fullRole": "Frontend Developer",
-    "photoAlt": "Frontend Developer portrait",
+    "fullRole": "Fullstack Developer",
+    "photoAlt": "Fullstack Developer portrait",
     "title": "I accelerate product growth with chaos-free frontend delivery",
-    "lead": "I design and build frontend systems for SaaS and dashboard products: fast feature delivery today, maintainable architecture for tomorrow.",
-    "body": "6+ years of commercial experience with TypeScript, Vue/Nuxt, React/Next.js, FSD, monorepos, real-time interfaces, and design systems.",
-    "support": "I focus on predictable delivery and product quality: clear architecture, fewer regressions, and faster feature rollouts.",
+    "lead": "I design and build fullstack solutions for SaaS and dashboard products: fast frontend feature delivery, reliable backend logic, and architecture that scales with team and product growth.",
+    "body": "6+ years of commercial experience with TypeScript, Vue/Nuxt, React/Next.js, Node.js/NestJS, PHP/Yii2, FSD, monorepos, real-time interfaces, and design systems.",
+    "support": "I deliver end-to-end: from UX and API integrations to backend logic, RBAC flows, and release stability.",
     "meta": "Open to product teams and outsource projects · Remote / International",
     "ctaPrimary": "Discuss collaboration",
     "ctaSecondary": "View case studies",
@@ -41,14 +41,87 @@
   },
   "positioning": {
     "eyebrow": "Positioning",
-    "title": "A frontend partner for product teams",
-    "subtitle": "I work at the intersection of engineering and product, turning business goals into reliable frontend delivery.",
+    "title": "A fullstack partner for product teams",
+    "subtitle": "I work at the intersection of engineering and product, turning business goals into reliable end-to-end delivery.",
     "items": [
-      "Fast product onboarding with focus on high-impact priorities and measurable outcomes",
-      "Scalable frontend architecture that supports team growth without chaos",
-      "Faster delivery through reusable UI, design systems, and shared engineering patterns",
-      "Strong execution in data-heavy and real-time interfaces for SaaS/dashboard domains",
-      "Predictable quality with tests, code review, and release discipline"
+      "Fast product onboarding with focus on high-impact priorities and measurable business outcomes",
+      "Scalable fullstack architecture with strong frontend, clear API contracts, and stable backend flows",
+      "Faster delivery through reusable UI, shared modules, monorepo practices, and engineering standards",
+      "Strong execution in data-heavy and real-time scenarios with roles and access control in SaaS/dashboard domains",
+      "Predictable quality through testing, code review, transparent releases, and regression control"
+    ]
+  },
+  "management": {
+    "eyebrow": "Management skills",
+    "title": "How I strengthen a team beyond coding",
+    "subtitle": "I own processes, communication, and engineering culture so teams move faster with less delivery risk.",
+    "items": [
+      {
+        "title": "Frontend direction leadership",
+        "description": "In recent projects I led the frontend direction: architecture decisions, feature decomposition, and team coordination."
+      },
+      {
+        "title": "Code review as a system",
+        "description": "I build review practices that increase code quality, reduce regressions, and shorten onboarding time."
+      },
+      {
+        "title": "Mentoring middle/junior engineers",
+        "description": "I help developers grow through clear feedback loops, joint solution breakdowns, and shared engineering standards."
+      },
+      {
+        "title": "Business-product communication",
+        "description": "I translate business goals into technical plans: timelines, risks, trade-offs, and realistic delivery stages."
+      }
+    ]
+  },
+  "aiSkills": {
+    "eyebrow": "AI skills",
+    "title": "Where AI meaningfully accelerates delivery",
+    "subtitle": "I use AI as an engineering tool in a disciplined way: measurable speedups with quality control.",
+    "items": [
+      {
+        "title": "AI-assisted refactoring",
+        "description": "I speed up legacy analysis, module decomposition, and migration of repeated logic into reusable layers."
+      },
+      {
+        "title": "AI-agent workflows",
+        "description": "I run agentic workflows for repetitive tasks: scaffold generation, architecture guardrails, and technical drafts."
+      },
+      {
+        "title": "Tests and regression control",
+        "description": "I use AI to draft test scenarios and edge cases, then validate everything through engineering review."
+      },
+      {
+        "title": "Technical docs and playbooks",
+        "description": "I accelerate documentation updates: engineering rules, onboarding guides, and team playbooks."
+      }
+    ]
+  },
+  "achievements": {
+    "eyebrow": "Key achievements",
+    "title": "Results that are easy to measure",
+    "subtitle": "I focus on metrics that matter for business: speed, scalability, and team efficiency.",
+    "items": [
+      {
+        "metric": "35-40%",
+        "title": "Faster delivery of new modules",
+        "description": "After introducing FSD and shared frontend patterns, the team shipped new sections significantly faster."
+      },
+      {
+        "metric": "-30%",
+        "title": "Less duplication in monorepo",
+        "description": "I moved shared UI, types, and helpers into dedicated packages, simplifying maintenance and release flow."
+      },
+      {
+        "metric": "40%",
+        "title": "Faster legacy migration streams",
+        "description": "With AI-assisted refactoring and reusable components, I reduced migration time for dashboard modules."
+      },
+      {
+        "metric": "E2E ownership",
+        "title": "End-to-end delivery ownership",
+        "description": "I owned flows from UI and API integration to backend logic, access control, and release stability."
+      }
     ]
   },
   "expertise": {
@@ -117,7 +190,7 @@
         },
         "context": "Rizzult is a B2B SaaS performance influencer marketing platform for brands, agencies, and app/e-commerce teams. The product needed a unified system where businesses could run controllable creator campaigns with pay-for-results economics rather than pure reach: multi-country launch flows, transparent action tracking (clicks, installs, sales), ROAS analytics, and scalable operations without expanding the marketing team.",
         "role": [
-          "Frontend Developer on the product team",
+          "Fullstack Developer on the product team",
           "Development and scaling of the B2B dashboard for Brands / Agencies / Marketers",
           "Design of FSD architecture and shared modules in the monorepo",
           "Implementation of data-heavy screens: tables, reports, funnels, and KPI cards",
@@ -169,7 +242,7 @@
         },
         "context": "Interactive Form is a product that generates interactive AI forms from a short business description or a website link. The platform goal was to turn traffic into qualified leads faster via personalized question flows, conversion analytics, and no-code website integration (embed + Google Tag Manager).",
         "role": [
-          "Frontend Developer (React/Next.js)",
+          "Fullstack Developer (React/Next.js)",
           "Development of landing, form generation flow, and dashboard application",
           "FSD module design in NX monorepo",
           "Implementation of the user flow from signup to first leads",
@@ -219,7 +292,7 @@
         },
         "context": "Perfluence is a large platform for creators, Telegram channels, and brands in Russia and CIS with a pay-for-results model. During product growth, the platform reported 518,000 creators and RUB 6.9B paid out to creators. The challenge was to keep shipping new B2B/B2C functionality while migrating legacy frontend to a modern stack without disrupting releases.",
         "role": [
-          "Frontend Developer on the product team",
+          "Fullstack Developer on the product team",
           "Product interface development for creators and brands",
           "Dashboard and Telegram WebView monetization flow development",
           "Participation in legacy migration strategy and implementation",
@@ -361,7 +434,7 @@
     }
   },
   "footer": {
-    "rights": "Frontend Developer Portfolio",
+    "rights": "Fullstack Developer Portfolio",
     "built": "Vue 3 · TypeScript · Tailwind"
   },
   "theme": {

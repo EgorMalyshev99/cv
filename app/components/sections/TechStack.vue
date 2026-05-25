@@ -34,8 +34,13 @@ interface StackGroup {
   items: string[]
 }
 
-const { t, tm } = useI18n()
-const groups = computed(() => tm('stack.groups') as StackGroup[])
+const { t, tm, rt } = useI18n()
+const groups = computed(() =>
+  (tm('stack.groups') as StackGroup[]).map((group) => ({
+    title: rt(group.title),
+    items: group.items.map((item) => rt(item)),
+  }))
+)
 
 const groupIcons = [PhBracketsCurly, PhTreeStructure, PhChartBar, PhPalette]
 </script>

@@ -1,6 +1,6 @@
-# Frontend Developer — Personal Landing (Nuxt 4)
+# Fullstack Developer — Personal Landing (Nuxt 4)
 
-Premium personal landing page with SSR and SEO for HR, CTOs, and international teams.
+Premium personal landing page with SSR and SEO for HR, CTOs, CEOs, and international teams.
 
 ## Stack
 
