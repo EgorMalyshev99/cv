@@ -19,7 +19,6 @@ export default withNuxt(
     },
     rules: {
       'vue/no-unused-components': 'error',
-      'vue/no-undef-components': 'warn',
       'vue/block-order': ['error', { order: ['template', 'script', 'style'] }],
     },
   },
@@ -41,5 +40,5 @@ export default withNuxt(
     rules: { 'vue/multi-word-component-names': 'off' },
   },
 
-  eslintConfigPrettier,
+  eslintConfigPrettier
 )

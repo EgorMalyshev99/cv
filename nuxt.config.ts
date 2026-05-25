@@ -13,12 +13,19 @@ export default defineNuxtConfig({
     '@nuxt/hints',
     '@nuxt/image',
     '@nuxt/scripts',
-    'shadcn-nuxt',
     '@nuxtjs/i18n',
     '@nuxtjs/color-mode',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
+    '@vueuse/nuxt',
+    'nuxt-yandex-metrika',
+    'shadcn-nuxt',
   ],
+
+  devServer: {
+    host: process.env.NUXT_SERVER_HOST || '0.0.0.0',
+    port: Number(process.env.NUXT_SERVER_PORT) || 3000,
+  },
 
   css: ['~/assets/css/tailwind.css'],
 
@@ -33,24 +40,19 @@ export default defineNuxtConfig({
 
   site: {
     name: 'Frontend Developer',
-    url: process.env.NUXT_SITE_URL,
+    url: process.env.NUXT_PUBLIC_SITE_URL || '',
   },
 
   runtimeConfig: {
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || '',
+      posthogKey: process.env.NUXT_PUBLIC_POSTHOG_KEY || '',
+      posthogHost: process.env.NUXT_PUBLIC_POSTHOG_HOST || 'https://eu.i.posthog.com',
     },
   },
 
   sitemap: {
     zeroRuntime: true,
-  },
-
-  nitro: {
-    // Windows: @vercel/nft tracing during nitro:node-externals can take minutes with no log output.
-    externals: {
-      trace: false,
-    },
   },
 
   app: {
@@ -82,5 +84,17 @@ export default defineNuxtConfig({
       redirectOn: 'root',
     },
     vueI18n: './i18n.config.ts',
+  },
+
+  yandexMetrika: {
+    id: process.env.NUXT_PUBLIC_YANDEX_METRIKA_ID || '',
+    debug: process.env.NODE_ENV !== 'production',
+    // delay: 0,
+    // cdn: false,
+    verification: process.env.NUXT_PUBLIC_YANDEX_METRIKA_VERIFICATION || '',
+    options: {
+      webvisor: true,
+      clickmap: true,
+    },
   },
 })

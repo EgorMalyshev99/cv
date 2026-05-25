@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write \"app/**/*.{ts,vue,js,json,css,md}\""
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@nuxt/eslint": "1.15.2",
@@ -25,9 +25,11 @@
     "@phosphor-icons/vue": "^2.2.1",
     "@unhead/vue": "^3.1.0",
     "@vueuse/core": "^14.3.0",
+    "@vueuse/nuxt": "^14.3.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "nuxt": "^4.4.6",
+    "posthog-js": "^1.376.0",
     "reka-ui": "^2.9.8",
     "shadcn-nuxt": "2.7.3",
     "tailwind-merge": "^3.6.0",
@@ -41,6 +43,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import-x": "^4.16.2",
+    "nuxt-yandex-metrika": "^2.0.2",
     "prettier": "^3.8.3",
     "prettier-plugin-classnames": "^0.10.1",
     "prettier-plugin-merge": "^0.10.1",

@@ -24,7 +24,7 @@
 </template>
 
 <script setup lang="ts">
-import { useCopyToClipboard } from '@/composables/useCopyToClipboard'
+import { useClipboard } from '@vueuse/core'
 import { Button } from '@/components/ui/button'
 import GlassCard from '@/components/GlassCard.vue'
 import SectionHeading from '@/components/layout/SectionHeading.vue'
@@ -33,5 +33,5 @@ import { CONTACT_EMAIL } from '@/config/site'
 import { vFadeUp } from '@/composables/useFadeUp'
 
 const { t } = useI18n()
-const { copy: copyEmail, copied } = useCopyToClipboard(CONTACT_EMAIL)
+const { copy: copyEmail, copied } = useClipboard({ source: CONTACT_EMAIL })
 </script>

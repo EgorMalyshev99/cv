@@ -24,15 +24,15 @@ pnpm format       # Prettier
 
 ## Project structure
 
-```
+```txt
 app/
   pages/           # Routes (index.vue, cases/[slug].vue)
   components/      # layout, sections, cases, ui
   composables/     # useTheme, useLocale, useSiteUrl, useFadeUp
   data/cases.ts    # Case slugs, tags, stack
   assets/css/      # tailwind.css (design tokens)
-locales/           # ru.json, en.json (lazy-loaded)
-i18n.config.ts     # vue-i18n runtime options only
+i18n/locales/      # ru.json, en.json (lazy-loaded)
+i18n/i18n.config.ts # vue-i18n runtime options only
 public/            # images, CV PDFs, favicon
 ```
 
@@ -41,7 +41,6 @@ public/            # images, CV PDFs, favicon
 Copy `.env.example` to `.env` and set your production URL (build fails site-config checks with `localhost`):
 
 ```env
-NUXT_SITE_URL=https://your-domain.example
 NUXT_PUBLIC_SITE_URL=https://your-domain.example
 ```
 
