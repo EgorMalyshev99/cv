@@ -1,34 +1,3 @@
-<script setup lang="ts">
-import type { DialogContentEmits, DialogContentProps } from 'reka-ui'
-import type { HTMLAttributes } from 'vue'
-import { PhX } from '@phosphor-icons/vue'
-import { reactiveOmit } from '@vueuse/core'
-import { DialogClose, DialogContent, DialogPortal, useForwardPropsEmits } from 'reka-ui'
-import { cn } from '@/lib/utils'
-import DialogOverlay from './DialogOverlay.vue'
-
-defineOptions({
-  inheritAttrs: false,
-})
-
-const props = withDefaults(
-  defineProps<
-    DialogContentProps & {
-      class?: HTMLAttributes['class']
-      showCloseButton?: boolean
-    }
-  >(),
-  {
-    showCloseButton: true,
-  }
-)
-const emits = defineEmits<DialogContentEmits>()
-
-const delegatedProps = reactiveOmit(props, 'class')
-
-const forwarded = useForwardPropsEmits(delegatedProps, emits)
-</script>
-
 <template>
   <DialogPortal>
     <DialogOverlay />
@@ -61,3 +30,33 @@ const forwarded = useForwardPropsEmits(delegatedProps, emits)
     </DialogContent>
   </DialogPortal>
 </template>
+
+<script setup lang="ts">
+import type { DialogContentEmits, DialogContentProps } from 'reka-ui'
+import type { HTMLAttributes } from 'vue'
+import { PhX } from '@phosphor-icons/vue'
+import { reactiveOmit } from '@vueuse/core'
+import { DialogClose, DialogContent, DialogPortal, useForwardPropsEmits } from 'reka-ui'
+import DialogOverlay from './DialogOverlay.vue'
+import { cn } from '@/lib/utils'
+defineOptions({
+  inheritAttrs: false,
+})
+
+const props = withDefaults(
+  defineProps<
+    DialogContentProps & {
+      class?: HTMLAttributes['class']
+      showCloseButton?: boolean
+    }
+  >(),
+  {
+    showCloseButton: true,
+  }
+)
+const emits = defineEmits<DialogContentEmits>()
+
+const delegatedProps = reactiveOmit(props, 'class')
+
+const forwarded = useForwardPropsEmits(delegatedProps, emits)
+</script>

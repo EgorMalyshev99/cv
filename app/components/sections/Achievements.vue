@@ -1,7 +1,7 @@
 <template>
   <section class="py-20 md:py-24">
     <div class="container">
-      <SectionHeading
+      <LayoutSectionHeading
         :eyebrow="t('achievements.eyebrow')"
         :title="t('achievements.title')"
         :subtitle="t('achievements.subtitle')"
@@ -25,10 +25,6 @@
 
 <script setup lang="ts">
 import { PhChartLineUp, PhCircuitry, PhLightning, PhRocketLaunch } from '@phosphor-icons/vue'
-import GlassCard from '@/components/GlassCard.vue'
-import SectionHeading from '@/components/layout/SectionHeading.vue'
-import { vFadeUp } from '@/composables/useFadeUp'
-
 interface AchievementItem {
   metric: string
   title: string

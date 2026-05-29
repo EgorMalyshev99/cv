@@ -2,8 +2,8 @@
   <section class="py-20 md:py-28 lg:py-32">
     <div class="container grid items-center gap-12 md:grid-cols-2">
       <div v-fade-up>
-        <Dialog>
-          <DialogTrigger as-child>
+        <UiDialog>
+          <UiDialogTrigger as-child>
             <div
               class="border-border/70 bg-card/80 mb-6 inline-flex cursor-zoom-in items-center gap-3 rounded-full border
                 px-2 py-2 pr-4 shadow-sm transition-opacity hover:opacity-80"
@@ -18,11 +18,11 @@
                 <p class="text-muted-foreground text-xs">{{ t('hero.fullRole') }}</p>
               </div>
             </div>
-          </DialogTrigger>
-          <DialogContent class="border-0 bg-transparent p-0 shadow-none sm:max-w-xl" :show-close-button="false">
+          </UiDialogTrigger>
+          <UiDialogContent class="border-0 bg-transparent p-0 shadow-none sm:max-w-xl" :show-close-button="false">
             <img src="/me.jpg" :alt="t('hero.photoAlt')" class="w-full rounded-2xl object-cover shadow-2xl" />
-          </DialogContent>
-        </Dialog>
+          </UiDialogContent>
+        </UiDialog>
         <p class="text-accent mb-4 text-sm font-medium tracking-wide">{{ t('hero.eyebrow') }}</p>
         <h1 class="text-4xl font-semibold tracking-tight text-balance md:text-5xl lg:text-6xl">
           {{ t('hero.title') }}
@@ -32,18 +32,18 @@
         <p class="text-muted-foreground/80 mt-3 text-base leading-relaxed">{{ t('hero.support') }}</p>
         <p class="text-muted-foreground/70 mt-3 text-sm leading-relaxed">{{ t('hero.meta') }}</p>
         <div class="mt-8 flex flex-wrap gap-3">
-          <Button as-child size="lg" class="cta-glow">
+          <UiButton as-child size="lg" class="cta-glow">
             <a href="#contact">{{ t('hero.ctaPrimary') }}</a>
-          </Button>
-          <Button as-child variant="outline" size="lg">
+          </UiButton>
+          <UiButton as-child variant="outline" size="lg">
             <a href="#cases">{{ t('hero.ctaSecondary') }}</a>
-          </Button>
-          <Button as-child variant="ghost" size="lg">
+          </UiButton>
+          <UiButton as-child variant="ghost" size="lg">
             <a href="/Malyshev_E_M_fullstack_cv.pdf" download class="inline-flex items-center gap-2">
               <PhDownloadSimple :size="16" />
               {{ t('hero.ctaDownloadCv') }}
             </a>
-          </Button>
+          </UiButton>
         </div>
       </div>
       <ClientOnly>
@@ -61,10 +61,6 @@
 
 <script setup lang="ts">
 import { PhDownloadSimple } from '@phosphor-icons/vue'
-import { Button } from '@/components/ui/button'
-import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
-import { useTheme } from '@/composables/useTheme'
-import { vFadeUp } from '@/composables/useFadeUp'
 
 const { t } = useI18n()
 const { isDark } = useTheme()

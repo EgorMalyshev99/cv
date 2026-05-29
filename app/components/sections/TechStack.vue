@@ -1,7 +1,7 @@
 <template>
   <section id="stack" class="py-20 md:py-24">
     <div class="container">
-      <SectionHeading
+      <LayoutSectionHeading
         :eyebrow="t('stack.eyebrow')"
         :title="t('stack.title')"
         :subtitle="t('stack.subtitle')"
@@ -24,11 +24,6 @@
 
 <script setup lang="ts">
 import { PhBracketsCurly, PhChartBar, PhPalette, PhTreeStructure } from '@phosphor-icons/vue'
-import GlassCard from '@/components/GlassCard.vue'
-import TechTag from '@/components/TechTag.vue'
-import SectionHeading from '@/components/layout/SectionHeading.vue'
-import { vFadeUp } from '@/composables/useFadeUp'
-
 interface StackGroup {
   title: string
   items: string[]

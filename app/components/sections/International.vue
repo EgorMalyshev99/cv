@@ -2,7 +2,7 @@
   <section class="py-20 md:py-24">
     <div class="container">
       <GlassCard v-fade-up class="p-8 md:p-10">
-        <SectionHeading
+        <LayoutSectionHeading
           :eyebrow="t('international.eyebrow')"
           :title="t('international.title')"
           :subtitle="t('international.subtitle')"
@@ -24,10 +24,6 @@
 </template>
 
 <script setup lang="ts">
-import GlassCard from '@/components/GlassCard.vue'
-import SectionHeading from '@/components/layout/SectionHeading.vue'
-import { vFadeUp } from '@/composables/useFadeUp'
-
 const { t, tm, rt } = useI18n()
 const items = computed(() => (tm('international.items') as string[]).map((item) => rt(item)))
 </script>

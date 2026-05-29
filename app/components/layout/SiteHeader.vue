@@ -3,8 +3,8 @@
     <div class="container flex h-16 items-center justify-between gap-4">
       <NuxtLink to="/" class="text-sm font-semibold tracking-tight md:text-base">
         <span class="md:hidden">
-          <span class="text-gradient">FSDev</span>
-          <span class="text-foreground"> - mobile</span>
+          <span class="text-gradient">FS</span>
+          <span class="text-foreground">Dev</span>
         </span>
         <span class="hidden md:inline">
           <span class="text-gradient">Fullstack</span>
@@ -31,7 +31,7 @@
         <LocaleSwitcher />
         <ThemeToggle />
         <ContactDialog class="hidden sm:block">
-          <Button size="sm" class="cta-glow">{{ t('nav.email') }}</Button>
+          <UiButton size="sm" class="cta-glow">{{ t('nav.email') }}</UiButton>
         </ContactDialog>
       </div>
     </div>
@@ -40,10 +40,6 @@
 
 <script setup lang="ts">
 import { PhDownloadSimple } from '@phosphor-icons/vue'
-import { Button } from '@/components/ui/button'
-import LocaleSwitcher from '@/components/LocaleSwitcher.vue'
-import ThemeToggle from '@/components/ThemeToggle.vue'
-import ContactDialog from '@/components/ContactDialog.vue'
 
 const { t } = useI18n()
 </script>

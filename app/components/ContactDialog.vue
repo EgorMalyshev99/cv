@@ -1,13 +1,13 @@
 <template>
-  <Dialog>
-    <DialogTrigger as-child>
+  <UiDialog>
+    <UiDialogTrigger as-child>
       <slot />
-    </DialogTrigger>
-    <DialogContent class="sm:max-w-md">
-      <DialogHeader>
-        <DialogTitle>{{ t('contact.dialog.title') }}</DialogTitle>
-        <DialogDescription>{{ t('contact.dialog.subtitle') }}</DialogDescription>
-      </DialogHeader>
+    </UiDialogTrigger>
+    <UiDialogContent class="sm:max-w-md">
+      <UiDialogHeader>
+        <UiDialogTitle>{{ t('contact.dialog.title') }}</UiDialogTitle>
+        <UiDialogDescription>{{ t('contact.dialog.subtitle') }}</UiDialogDescription>
+      </UiDialogHeader>
 
       <div class="flex flex-col gap-3 py-2">
         <a
@@ -41,21 +41,13 @@
           </button>
         </div>
       </div>
-    </DialogContent>
-  </Dialog>
+    </UiDialogContent>
+  </UiDialog>
 </template>
 
 <script setup lang="ts">
 import { useClipboard } from '@vueuse/core'
 import { PhArrowSquareOut, PhEnvelope, PhGithubLogo, PhLinkedinLogo, PhTelegramLogo } from '@phosphor-icons/vue'
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from '@/components/ui/dialog'
 import { CONTACT_EMAIL, SOCIAL_LINKS } from '@/config/site'
 
 const { t } = useI18n()

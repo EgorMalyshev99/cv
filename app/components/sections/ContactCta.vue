@@ -2,7 +2,7 @@
   <section id="contact" class="py-20 md:py-28">
     <div class="container">
       <GlassCard v-fade-up class="p-8 text-center md:p-12">
-        <SectionHeading
+        <LayoutSectionHeading
           :eyebrow="t('contact.eyebrow')"
           :title="t('contact.title')"
           :subtitle="t('contact.subtitle')"
@@ -11,11 +11,11 @@
         />
         <div class="flex flex-col items-center justify-center gap-3 sm:flex-row">
           <ContactDialog>
-            <Button size="lg" class="cta-glow">{{ t('contact.cta') }}</Button>
+            <UiButton size="lg" class="cta-glow">{{ t('contact.cta') }}</UiButton>
           </ContactDialog>
-          <Button variant="outline" size="lg" @click="() => copyEmail()">
+          <UiButton variant="outline" size="lg" @click="() => copyEmail()">
             {{ copied ? t('contact.copied') : t('contact.copy') }}
-          </Button>
+          </UiButton>
         </div>
         <p class="text-muted-foreground mt-4 text-sm">{{ CONTACT_EMAIL }}</p>
       </GlassCard>
@@ -25,12 +25,7 @@
 
 <script setup lang="ts">
 import { useClipboard } from '@vueuse/core'
-import { Button } from '@/components/ui/button'
-import GlassCard from '@/components/GlassCard.vue'
-import SectionHeading from '@/components/layout/SectionHeading.vue'
-import ContactDialog from '@/components/ContactDialog.vue'
 import { CONTACT_EMAIL } from '@/config/site'
-import { vFadeUp } from '@/composables/useFadeUp'
 
 const { t } = useI18n()
 const { copy: copyEmail, copied } = useClipboard({ source: CONTACT_EMAIL })

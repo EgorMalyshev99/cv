@@ -26,6 +26,18 @@ export default defineNuxtConfig({
     port: Number(process.env.NUXT_SERVER_PORT) || 3000,
   },
 
+  typescript: {
+    strict: true,
+    typeCheck: true,
+    shim: false,
+  },
+
+  eslint: {
+    config: {
+      stylistic: false,
+    },
+  },
+
   css: ['~/assets/fonts/inter.css', '~/assets/css/tailwind.css'],
 
   vite: {
@@ -33,7 +45,7 @@ export default defineNuxtConfig({
   },
 
   shadcn: {
-    prefix: '',
+    prefix: 'Ui',
     componentDir: '@/components/ui',
   },
 

@@ -1,7 +1,7 @@
 <template>
   <section class="py-20 md:py-24">
     <div class="container">
-      <SectionHeading
+      <LayoutSectionHeading
         :eyebrow="t('expertise.eyebrow')"
         :title="t('expertise.title')"
         :subtitle="t('expertise.subtitle')"
@@ -33,10 +33,6 @@ import {
   PhShieldCheck,
   PhWaveform,
 } from '@phosphor-icons/vue'
-import GlassCard from '@/components/GlassCard.vue'
-import SectionHeading from '@/components/layout/SectionHeading.vue'
-import { vFadeUp } from '@/composables/useFadeUp'
-
 interface ExpertiseItem {
   title: string
   description: string

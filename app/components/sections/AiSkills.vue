@@ -1,7 +1,7 @@
 <template>
   <section class="py-20 md:py-24">
     <div class="container">
-      <SectionHeading
+      <LayoutSectionHeading
         :eyebrow="t('aiSkills.eyebrow')"
         :title="t('aiSkills.title')"
         :subtitle="t('aiSkills.subtitle')"
@@ -24,10 +24,6 @@
 
 <script setup lang="ts">
 import { PhBracketsCurly, PhFileText, PhRobot, PhTestTube } from '@phosphor-icons/vue'
-import GlassCard from '@/components/GlassCard.vue'
-import SectionHeading from '@/components/layout/SectionHeading.vue'
-import { vFadeUp } from '@/composables/useFadeUp'
-
 interface AiSkillItem {
   title: string
   description: string

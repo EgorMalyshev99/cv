@@ -1,7 +1,7 @@
 <template>
   <section class="py-20 md:py-24">
     <div class="container">
-      <SectionHeading
+      <LayoutSectionHeading
         :eyebrow="t('positioning.eyebrow')"
         :title="t('positioning.title')"
         :subtitle="t('positioning.subtitle')"
@@ -28,10 +28,6 @@
 
 <script setup lang="ts">
 import { PhArrowsOut, PhDatabase, PhPackage, PhRocket, PhShieldCheck } from '@phosphor-icons/vue'
-import GlassCard from '@/components/GlassCard.vue'
-import SectionHeading from '@/components/layout/SectionHeading.vue'
-import { vFadeUp } from '@/composables/useFadeUp'
-
 const { t, tm, rt } = useI18n()
 const items = computed(() => (tm('positioning.items') as string[]).map((item) => rt(item)))
 

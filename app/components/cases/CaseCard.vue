@@ -30,8 +30,6 @@
 
 <script setup lang="ts">
 import type { CaseEntry } from '@/data/cases'
-import GlassCard from '@/components/GlassCard.vue'
-import TechTag from '@/components/TechTag.vue'
 
 defineProps<{
   caseEntry: CaseEntry

@@ -1,44 +1,49 @@
-// @ts-check
-import { flatConfigs } from 'eslint-plugin-import-x'
-import eslintConfigPrettier from 'eslint-config-prettier'
-import nuxtEslintConfig from './.nuxt/eslint.config.mjs'
+import withNuxt from './.nuxt/eslint.config.mjs'
+import eslintConfigPrettier from 'eslint-config-prettier/flat'
+import importPluginX from 'eslint-plugin-import-x'
+import prettierPlugin from 'eslint-plugin-prettier'
 
-export default nuxtEslintConfig(
-  flatConfigs.recommended,
-  flatConfigs.typescript,
-
+export default withNuxt(
+  {
+    ignores: ['.nuxt', '.output', '.turbo', 'node_modules', 'eslint.config.mjs'],
+  },
+  importPluginX.flatConfigs.recommended,
+  importPluginX.flatConfigs.typescript,
+  eslintConfigPrettier,
   {
     settings: {
       'import-x/resolver': {
         typescript: {
-          project: './.nuxt/tsconfig.app.json',
           alwaysTryTypes: true,
+          project: ['./tsconfig.json', './.nuxt/tsconfig.app.json'],
         },
-        node: true,
       },
     },
     rules: {
-      'vue/no-unused-components': 'error',
-      'vue/block-order': ['error', { order: ['template', 'script', 'style'] }],
+      'import-x/no-unresolved': 'off',
+      'prettier/prettier': 'error',
+      'vue/block-order': [
+        'error',
+        {
+          order: ['template', 'script', 'style'],
+        },
+      ],
+    },
+    plugins: {
+      prettier: prettierPlugin,
     },
   },
-
   {
     files: ['app/components/ui/**/*.vue'],
     rules: {
       'vue/multi-word-component-names': 'off',
       'vue/require-default-prop': 'off',
-      'vue/block-order': 'off',
     },
   },
   {
-    files: ['app/components/sections/**/*.vue'],
-    rules: { 'vue/multi-word-component-names': 'off' },
-  },
-  {
-    files: ['app/pages/**/*.vue'],
-    rules: { 'vue/multi-word-component-names': 'off' },
-  },
-
-  eslintConfigPrettier
+    files: ['eslint.config.mjs'],
+    rules: {
+      'import-x/no-named-as-default': 'off',
+    },
+  }
 )

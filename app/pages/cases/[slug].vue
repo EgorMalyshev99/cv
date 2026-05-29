@@ -34,33 +34,33 @@
         </a>
       </header>
 
-      <CaseSection :title="t('case.sections.context')" :paragraph="t(`cases.list.${slug}.context`)" />
+      <CasesCaseSection :title="t('case.sections.context')" :paragraph="t(`cases.list.${slug}.context`)" />
 
-      <CaseSection :title="t('case.sections.role')">
+      <CasesCaseSection :title="t('case.sections.role')">
         <ul class="text-muted-foreground list-disc space-y-2 pl-5">
           <li v-for="(item, i) in roleItems" :key="i">{{ item }}</li>
         </ul>
-      </CaseSection>
+      </CasesCaseSection>
 
-      <CaseSection :title="t('case.sections.tasks')">
+      <CasesCaseSection :title="t('case.sections.tasks')">
         <ul class="text-muted-foreground list-disc space-y-2 pl-5">
           <li v-for="(item, i) in taskItems" :key="i">{{ item }}</li>
         </ul>
-      </CaseSection>
+      </CasesCaseSection>
 
-      <CaseSection :title="t('case.sections.solution')">
+      <CasesCaseSection :title="t('case.sections.solution')">
         <ul class="text-muted-foreground list-disc space-y-2 pl-5">
           <li v-for="(item, i) in solutionItems" :key="i">{{ item }}</li>
         </ul>
-      </CaseSection>
+      </CasesCaseSection>
 
-      <CaseSection :title="t('case.sections.delivered')">
+      <CasesCaseSection :title="t('case.sections.delivered')">
         <ul class="text-muted-foreground list-disc space-y-2 pl-5">
           <li v-for="(item, i) in deliveredItems" :key="i">{{ item }}</li>
         </ul>
-      </CaseSection>
+      </CasesCaseSection>
 
-      <CaseSection :title="t('case.sections.impact')">
+      <CasesCaseSection :title="t('case.sections.impact')">
         <ul class="space-y-3">
           <li
             v-for="(item, i) in impactItems"
@@ -71,9 +71,9 @@
             {{ item }}
           </li>
         </ul>
-      </CaseSection>
+      </CasesCaseSection>
 
-      <CaseSection :title="t('case.sections.stack')">
+      <CasesCaseSection :title="t('case.sections.stack')">
         <div class="space-y-4">
           <div v-for="group in caseEntry.stack" :key="group.groupKey">
             <h3 class="mb-2 text-sm font-semibold">{{ t(group.groupKey) }}</h3>
@@ -82,21 +82,16 @@
             </div>
           </div>
         </div>
-      </CaseSection>
+      </CasesCaseSection>
 
-      <CaseNav :slug="slug" />
+      <CasesCaseNav :slug="slug" />
     </div>
   </article>
 </template>
 
 <script setup lang="ts">
 import { PhArrowLeft, PhArrowSquareOut } from '@phosphor-icons/vue'
-import CaseNav from '@/components/cases/CaseNav.vue'
-import CaseSection from '@/components/cases/CaseSection.vue'
-import TechTag from '@/components/TechTag.vue'
 import { getCase, type CaseSlug } from '@/data/cases'
-import { useSiteUrl } from '@/composables/useSiteUrl'
-import { vFadeUp } from '@/composables/useFadeUp'
 
 const route = useRoute()
 const { t, tm, rt, locale } = useI18n()

@@ -1,7 +1,7 @@
 <template>
   <section class="py-20 md:py-24">
     <div class="container">
-      <SectionHeading
+      <LayoutSectionHeading
         :eyebrow="t('principles.eyebrow')"
         :title="t('principles.title')"
         :subtitle="t('principles.subtitle')"
@@ -24,10 +24,6 @@
 
 <script setup lang="ts">
 import { PhArrowsOut, PhChatsCircle, PhLightbulb, PhRecycle } from '@phosphor-icons/vue'
-import GlassCard from '@/components/GlassCard.vue'
-import SectionHeading from '@/components/layout/SectionHeading.vue'
-import { vFadeUp } from '@/composables/useFadeUp'
-
 interface PrincipleItem {
   title: string
   description: string
