@@ -62,10 +62,6 @@ export default defineNuxtConfig({
     },
   },
 
-  sitemap: {
-    zeroRuntime: true,
-  },
-
   app: {
     head: {
       htmlAttrs: { lang: 'ru' },
