@@ -9,6 +9,7 @@ export interface CaseEntry {
   slug: CaseSlug
   companyUrl: string
   image: string
+  logo: string
   tags: string[]
   stack: CaseStackGroup[]
 }
@@ -18,6 +19,7 @@ export const cases: CaseEntry[] = [
     slug: 'rizzult-dashboard',
     companyUrl: 'https://rizzult.ai',
     image: '/img/rizzult-case.jpg',
+    logo: '/img/rizzult-logo.png',
     tags: [
       'Vue',
       'Nuxt',
@@ -32,7 +34,7 @@ export const cases: CaseEntry[] = [
       'NestJS',
       'PostgreSQL',
       'Vitest',
-      'CI/CD',
+      'Docker',
       'GitLab',
       'Design System',
     ],
@@ -45,27 +47,32 @@ export const cases: CaseEntry[] = [
       },
       {
         groupKey: 'cases.stackGroups.data',
-        items: ['TanStack Query', 'TanStack Table', 'Highcharts', 'Socket.io', 'GSAP', 'YouTrack API'],
+        items: ['TanStack Query', 'TanStack Table', 'Highcharts', 'Socket.io', 'GSAP', 'YouTrack API', 'Pinia'],
       },
-      { groupKey: 'cases.stackGroups.ops', items: ['Vitest', 'CI/CD', 'GitLab CI/CD'] },
+      { groupKey: 'cases.stackGroups.ops', items: ['Vite', 'Vitest', 'Docker', 'GitLab CI'] },
     ],
   },
   {
     slug: 'interactive-form-ai-dashboard',
     companyUrl: 'https://interactiveform.com',
     image: '/img/interactiveform-case.jpg',
+    logo: '/img/interactive-form-logo.png',
     tags: ['React', 'Next.js', 'TypeScript', 'NX Monorepo', 'FSD', 'NestJS', 'TanStack Query', 'Zod', 'Zustand'],
     stack: [
       { groupKey: 'cases.stackGroups.core', items: ['React', 'Next.js', 'TypeScript'] },
-      { groupKey: 'cases.stackGroups.architecture', items: ['NX Monorepo', 'FSD', 'Zustand'] },
-      { groupKey: 'cases.stackGroups.backend', items: ['Node.js', 'NestJS', 'REST API'] },
-      { groupKey: 'cases.stackGroups.data', items: ['TanStack Query', 'TanStack Table', 'Zod'] },
+      { groupKey: 'cases.stackGroups.architecture', items: ['NX Monorepo', 'FSD'] },
+      { groupKey: 'cases.stackGroups.backend', items: ['Node.js', 'NestJS', 'REST API', 'Supabase'] },
+      {
+        groupKey: 'cases.stackGroups.data',
+        items: ['TanStack Query', 'TanStack Table', 'Zod', 'Zustand', 'React Hook Form'],
+      },
     ],
   },
   {
     slug: 'perfluence-legacy-migration',
     companyUrl: 'https://perfluence.net',
     image: '/img/perfluence-case.jpg',
+    logo: '/img/perfluence-logo.png',
     tags: [
       'React',
       'Next.js',
@@ -85,13 +92,18 @@ export const cases: CaseEntry[] = [
     ],
     stack: [
       { groupKey: 'cases.stackGroups.core', items: ['React', 'Next.js', 'TypeScript', 'SCSS'] },
+      { groupKey: 'cases.stackGroups.architecture', items: ['FSD', 'Turborepo'] },
       {
         groupKey: 'cases.stackGroups.backend',
         items: ['PHP', 'Yii2', 'PostgreSQL', 'REST API'],
       },
       {
+        groupKey: 'cases.stackGroups.data',
+        items: ['Zustand', 'Redux', 'Highcharts'],
+      },
+      {
         groupKey: 'cases.stackGroups.platform',
-        items: ['Telegram WebView', 'Highcharts', 'Bootstrap UI', 'Mantine UI'],
+        items: ['Telegram WebView', 'Bootstrap UI', 'Mantine UI'],
       },
       { groupKey: 'cases.stackGroups.ops', items: ['Docker', 'GitLab CI/CD', 'CI/CD', 'Jest'] },
     ],

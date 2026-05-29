@@ -1,6 +1,18 @@
 <template>
-  <article v-if="caseEntry" class="py-12 md:py-16">
-    <div class="container">
+  <article v-if="caseEntry">
+    <div class="relative w-full overflow-hidden">
+      <img
+        :src="caseEntry.image"
+        :alt="t(`cases.list.${slug}.title`)"
+        class="h-48 w-full object-cover object-top md:h-64 lg:h-80"
+        fetchpriority="high"
+      />
+      <div
+        class="from-background/90 via-background/20 pointer-events-none absolute inset-0 bg-linear-to-t to-transparent"
+      />
+    </div>
+
+    <div class="container py-12 md:py-16">
       <NuxtLink
         to="/"
         class="text-muted-foreground hover:text-foreground mb-8 inline-flex items-center gap-1.5 text-sm
@@ -10,6 +22,13 @@
         {{ t('case.back') }}
       </NuxtLink>
       <header class="border-border mb-12 border-b pb-10">
+        <img
+          :src="caseEntry.logo"
+          :alt="t(`cases.list.${slug}.company`)"
+          class="mb-6 h-8 w-auto max-w-48 object-contain object-left md:h-10"
+          width="192"
+          height="40"
+        />
         <p class="text-accent mb-3 text-sm font-medium">
           {{ t(`cases.list.${slug}.hero.eyebrow`) }}
         </p>
@@ -19,9 +38,6 @@
         <p class="text-muted-foreground mt-4 text-lg leading-relaxed">
           {{ t(`cases.list.${slug}.hero.lead`) }}
         </p>
-        <div class="mt-6 flex flex-wrap gap-1.5">
-          <TechTag v-for="tag in caseEntry.tags" :key="tag">{{ tag }}</TechTag>
-        </div>
         <a
           :href="caseEntry.companyUrl"
           target="_blank"
@@ -35,6 +51,17 @@
       </header>
 
       <CasesCaseSection :title="t('case.sections.context')" :paragraph="t(`cases.list.${slug}.context`)" />
+
+      <CasesCaseSection :title="t('case.sections.stack')">
+        <div class="space-y-4">
+          <div v-for="group in caseEntry.stack" :key="group.groupKey">
+            <h3 class="mb-2 text-sm font-semibold">{{ t(group.groupKey) }}</h3>
+            <div class="flex flex-wrap gap-1.5">
+              <TechTag v-for="item in group.items" :key="item">{{ item }}</TechTag>
+            </div>
+          </div>
+        </div>
+      </CasesCaseSection>
 
       <CasesCaseSection :title="t('case.sections.role')">
         <ul class="text-muted-foreground list-disc space-y-2 pl-5">
@@ -71,17 +98,6 @@
             {{ item }}
           </li>
         </ul>
-      </CasesCaseSection>
-
-      <CasesCaseSection :title="t('case.sections.stack')">
-        <div class="space-y-4">
-          <div v-for="group in caseEntry.stack" :key="group.groupKey">
-            <h3 class="mb-2 text-sm font-semibold">{{ t(group.groupKey) }}</h3>
-            <div class="flex flex-wrap gap-1.5">
-              <TechTag v-for="item in group.items" :key="item">{{ item }}</TechTag>
-            </div>
-          </div>
-        </div>
       </CasesCaseSection>
 
       <CasesCaseNav :slug="slug" />
