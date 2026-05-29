@@ -38,7 +38,7 @@ public/            # images, CV PDFs, favicon
 
 ## Environment
 
-Copy `.env.example` to `.env` and set your production URL (build fails site-config checks with `localhost`):
+Copy `.env.example` to `.env` and set your production URL:
 
 ```env
 NUXT_PUBLIC_SITE_URL=https://your-domain.example

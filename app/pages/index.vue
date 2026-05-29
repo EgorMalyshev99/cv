@@ -14,6 +14,8 @@
 </template>
 
 <script setup lang="ts">
+import { useSiteUrl } from '@/composables/useSiteUrl'
+
 const { t, locale } = useI18n()
 const { baseUrl, pageUrl } = useSiteUrl()
 

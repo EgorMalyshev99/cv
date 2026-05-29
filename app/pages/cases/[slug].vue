@@ -92,6 +92,7 @@
 <script setup lang="ts">
 import { PhArrowLeft, PhArrowSquareOut } from '@phosphor-icons/vue'
 import { getCase, type CaseSlug } from '@/data/cases'
+import { useSiteUrl } from '@/composables/useSiteUrl'
 
 const route = useRoute()
 const { t, tm, rt, locale } = useI18n()
