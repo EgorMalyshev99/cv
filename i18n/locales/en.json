@@ -1,12 +1,12 @@
 {
   "seo": {
-    "siteName": "Egor Malyshev · Fullstack Developer",
+    "siteName": "Egor Malyshev · Fullstack / Frontend Lead",
     "home": {
-      "title": "Fullstack Developer for SaaS, dashboards, and product teams",
-      "description": "Hire a Fullstack Developer: I help HR, CTOs, and CEOs speed up delivery and reduce risk with strong frontend execution and reliable backend systems.",
-      "ogTitle": "Fullstack Developer for SaaS and product teams",
-      "ogDescription": "Fullstack portfolio with case studies in dashboards, real-time UX, architecture, monorepos, AI-assisted workflows, and legacy migrations.",
-      "keywords": "fullstack developer, hire fullstack developer, remote fullstack developer, vue developer, react developer, node.js developer, dashboard development, saas development, product development"
+      "title": "Fullstack / Frontend Lead for SaaS, dashboards, and product teams",
+      "description": "Hire a Fullstack or Frontend Lead: I help HR, CTOs, and CEOs speed up delivery through strong frontend execution, dashboard architecture, monorepos, and reliable backend systems.",
+      "ogTitle": "Fullstack / Frontend Lead for SaaS and product teams",
+      "ogDescription": "Fullstack / Frontend Lead portfolio: dashboards, real-time UX, FSD, monorepos, RBAC, AI-assisted workflows, and legacy migrations.",
+      "keywords": "fullstack developer, frontend lead, lead frontend developer, hire fullstack developer, vue developer, react developer, node.js developer, dashboard development, saas development, product development"
     },
     "case": {
       "titleSuffix": "Case study",
@@ -14,8 +14,8 @@
       "keywords": "frontend case study, frontend developer portfolio, {company}, frontend architecture, dashboard development, typescript, vue, react, product development"
     },
     "person": {
-      "jobTitle": "Fullstack Developer",
-      "description": "Fullstack developer with 6+ years in SaaS and dashboard products. I help teams build scalable interfaces, reliable backend logic, and predictable delivery."
+      "jobTitle": "Fullstack Developer · Frontend Lead",
+      "description": "Fullstack developer with Frontend Lead experience: 6+ years in SaaS and dashboard products, scalable interfaces, RBAC, monorepos, and predictable delivery."
     }
   },
   "nav": {
@@ -57,7 +57,7 @@
     "items": [
       {
         "title": "Frontend direction leadership",
-        "description": "In recent projects I led the frontend direction: architecture decisions, feature decomposition, and team coordination."
+        "description": "In recent projects I led the frontend direction as Frontend Lead: client architecture, monorepo structure, code quality, code review, mentoring, and AI-assisted development processes."
       },
       {
         "title": "Code review as a system",
@@ -133,6 +133,10 @@
         "description": "I build complex working interfaces: roles, filters, tables, charts, and decision-critical user flows."
       },
       {
+        "title": "RBAC & access control",
+        "description": "I design role-based access control: roles, permissions, scenario restrictions, and UI aligned with the server access model."
+      },
+      {
         "title": "Landing pages & websites",
         "description": "I deliver high-quality landing pages and websites with strong conversion structure, pixel-accurate UI, performance, and responsive behavior."
       },
@@ -172,6 +176,7 @@
     "stackGroups": {
       "core": "Core",
       "architecture": "Architecture",
+      "backend": "Backend & DB",
       "data": "Data & UI",
       "platform": "Platform",
       "ops": "Infrastructure"
@@ -189,19 +194,20 @@
         },
         "context": "Rizzult is a B2B SaaS performance influencer marketing platform for brands, agencies, and app/e-commerce teams. The product needed a unified system where businesses could run controllable creator campaigns with pay-for-results economics rather than pure reach: multi-country launch flows, transparent action tracking (clicks, installs, sales), ROAS analytics, and scalable operations without expanding the marketing team.",
         "role": [
-          "Fullstack Developer on the product team",
-          "Development and scaling of the B2B dashboard for Brands / Agencies / Marketers",
+          "Frontend Lead / Fullstack Developer on the product team",
+          "Designed and built the dashboard frontend from scratch: tables, charts, forms, filters, RBAC, and real-time scenarios",
           "Design of FSD architecture and shared modules in the monorepo",
-          "Implementation of data-heavy screens: tables, reports, funnels, and KPI cards",
-          "Integration of real-time and analytics scenarios for performance marketing",
-          "Code review and mentoring inside the frontend team"
+          "Data-heavy screens and interfaces for internal business processes",
+          "End-to-end delivery: frontend, REST API, backend on Node.js/NestJS and PHP/Yii2, PostgreSQL, roles, and access control",
+          "Code review, mentoring, and AI-assisted development processes inside the team"
         ],
         "tasks": [
-          "Scale the B2B dashboard for business owners, marketers, and agencies",
+          "Scale the B2B dashboard for business owners, marketers, and agencies with RBAC",
           "Develop the multi-page Nuxt product website with a BFF layer",
           "Establish FSD architecture and shared layers in Turborepo",
           "Build unified data flows for clicks, installs, sales, and ROAS",
           "Implement real-time monitoring with TanStack Query/Table, Highcharts, and Socket.io",
+          "Deliver interfaces for tables, forms, filters, and internal operational workflows",
           "Support GitLab CI/CD and improve release stability"
         ],
         "solution": [
@@ -209,19 +215,24 @@
           "Turborepo for shared packages, configs, and reusable UI",
           "Nuxt + BFF architecture for consistent data across landing pages and dashboard",
           "TanStack Query/Table + Highcharts for robust data-heavy interfaces",
-          "Socket.io for live updates on critical business metrics",
-          "GSAP plus Web Vitals/SEO optimization for public pages",
+          "Socket.io for live metric updates and a real-time sprint board integrated with YouTrack API",
+          "Node.js/NestJS and PHP/Yii2 + PostgreSQL for backend logic, roles, permissions, and external service integrations",
+          "AI-assisted development: legacy analysis, boilerplate modules, tests, documentation, shared-logic refactoring, and architectural guardrails",
+          "GSAP for UI animations on public pages plus Web Vitals/SEO optimization",
           "GitLab CI/CD + Vitest for reliable delivery and regression control"
         ],
         "delivered": [
           "B2B dashboard modules for launching and controlling creator campaigns",
+          "Dashboard frontend built from scratch: tables, charts, forms, filters, RBAC, and real-time scenarios",
+          "Real-time sprint planning board on Socket.io with YouTrack API task synchronization",
           "Multi-page Nuxt website with BFF integration",
           "KPI widgets and reports for clicks, sales, installs, and ROAS",
-          "Real-time updates for critical metrics without page reload",
           "Unified UI/data patterns in the monorepo with lower duplication",
           "GitLab CI/CD pipeline and Vitest coverage for key flows"
         ],
         "impact": [
+          "35-40% faster delivery of new sections after FSD and shared frontend patterns",
+          "Around 30% less code duplication after moving shared UI, types, and utilities into Turborepo packages",
           "Platform scale support: 100,000+ registered influencers",
           "Business-proof campaign tracking scenarios: 37,000,000+ performance actions for brands",
           "Reliable analytics foundation for campaign operations: 6 TB ClickHouse + 100 TB media storage",
@@ -241,8 +252,9 @@
         },
         "context": "Interactive Form is a product that generates interactive AI forms from a short business description or a website link. The platform goal was to turn traffic into qualified leads faster via personalized question flows, conversion analytics, and no-code website integration (embed + Google Tag Manager).",
         "role": [
-          "Fullstack Developer (React/Next.js)",
-          "Development of landing, form generation flow, and dashboard application",
+          "Fullstack Developer (React/Next.js), part-time",
+          "Development of landing, form generation flow, dashboard, and internal tools",
+          "Backend modules on Node.js/NestJS and frontend integration with API",
           "FSD module design in NX monorepo",
           "Implementation of the user flow from signup to first leads",
           "Forms, validation, integrations, and state management for product scenarios"
@@ -250,7 +262,9 @@
         "tasks": [
           "Build landing, onboarding, and dashboard in one NX monorepo",
           "Implement AI form generation from prompt or website URL",
+          "Set up AI-assisted website parsing: extraction rules, quality checks, prompt improvements, and edge cases",
           "Set up lead and API workflows with TanStack Query/Table",
+          "Extend backend API endpoints, business logic, and data processing on Node.js/NestJS",
           "Introduce Zod validation for forms and server responses",
           "Add no-code integrations: Google Analytics, TikTok Pixel, Facebook Pixel, and email",
           "Use Zustand where client-side state requires explicit control"
@@ -259,6 +273,8 @@
           "Next.js App Router for landing and dashboard flows",
           "NX monorepo with shared UI, API client, and utility libraries",
           "FSD layers for feature isolation and entity reuse",
+          "Node.js/NestJS backend: API endpoints, data processing, and integrations for internal tools",
+          "AI-assisted parsing: formalized content extraction rules and validation of parsing results",
           "Zod + react-hook-form for type-safe dynamic forms",
           "TanStack Query for predictable server state handling",
           "Conversion tracking integrations and UI flows optimized for fast activation"
@@ -267,6 +283,7 @@
           "Product landing with clear value proposition",
           "AI form creation flow: business prompt -> ready form -> embed code",
           "Dashboard for lead tracking, form management, and integrations",
+          "Internal tools for AI-assisted parsing and structured data extraction from websites",
           "Integration screens for analytics, ad pixels, and email notifications",
           "Shared form patterns with typed validation",
           "Modular architecture for parallel feature development"
@@ -294,7 +311,8 @@
           "Fullstack Developer on the product team",
           "Product interface development for creators and brands",
           "Dashboard and Telegram WebView monetization flow development",
-          "Participation in legacy migration strategy and implementation",
+          "Participation in legacy migration strategy and implementation without stopping business operations",
+          "Backend on PHP/Yii2: API, business logic, PostgreSQL, and support for existing product solutions",
           "REST API integration, analytics, and data visualization"
         ],
         "tasks": [
@@ -307,9 +325,11 @@
         ],
         "solution": [
           "Strangler pattern: new React modules, legacy isolated incrementally",
+          "AI-assisted migration: legacy decomposition, reusable components, and faster delivery of typical UI flows",
           "Next.js for consistent routing and required SSR/SSG scenarios",
           "Bootstrap UI + SCSS for legacy interface maintenance",
           "Mantine UI for modern modules and faster delivery",
+          "PHP/Yii2 + PostgreSQL + REST API for client-server logic and integrations",
           "REST API layer and Highcharts for campaign and payout analytics",
           "Docker + GitLab CI/CD + Jest for stable builds and quality control"
         ],
@@ -322,7 +342,9 @@
           "GitLab CI/CD pipeline and Jest coverage for critical modules"
         ],
         "impact": [
-          "Continuous feature delivery during migration",
+          "Continuous feature delivery during migration without stopping current business operations",
+          "Around 40% faster migration of individual dashboard sections through AI-assisted refactoring",
+          "Around 30% less legacy code in migrated modules",
           "Product support at large audience and campaign scale",
           "Reduced technical debt in critical user flows",
           "More transparent and controllable analytics for the pay-for-results model",
@@ -360,7 +382,11 @@
       },
       {
         "title": "Architecture",
-        "items": ["FSD", "Turborepo", "Nx Monorepo", "Design System"]
+        "items": ["FSD", "Turborepo", "Nx Monorepo", "Design System", "RBAC"]
+      },
+      {
+        "title": "Backend & DB",
+        "items": ["Node.js", "NestJS", "PHP", "Yii2", "PostgreSQL", "Redis", "REST API", "WebSocket"]
       },
       {
         "title": "Data & UI",

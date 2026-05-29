@@ -30,5 +30,4 @@ logs
 # AI Generated Files
 .agents
 .cursor
-skills-lock.json
 AGENTS.md

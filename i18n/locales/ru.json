@@ -1,12 +1,12 @@
 {
   "seo": {
-    "siteName": "Егор Малышев · Fullstack Developer",
+    "siteName": "Егор Малышев · Fullstack / Frontend Lead",
     "home": {
-      "title": "Fullstack Developer для SaaS, dashboard и продуктовых команд",
-      "description": "Нанять Fullstack Developer: помогаю HR, CTO и CEO ускорять delivery и снижать риски через сильный frontend и надежный backend для продуктовых сценариев.",
-      "ogTitle": "Fullstack Developer для SaaS и продуктовых команд",
-      "ogDescription": "Портфолио fullstack-разработчика: dashboard, real-time, архитектура, monorepo, AI-assisted workflows и legacy migration.",
-      "keywords": "fullstack developer, фронтенд бэкенд разработчик, нанять fullstack разработчика, vue разработчик, react разработчик, node.js разработчик, dashboard разработка, saas разработка, product development"
+      "title": "Fullstack / Frontend Lead для SaaS, dashboard и продуктовых команд",
+      "description": "Нанять Fullstack или Frontend Lead: помогаю HR, CTO и CEO ускорять delivery через сильный frontend, dashboard-архитектуру, monorepo и надёжный backend.",
+      "ogTitle": "Fullstack / Frontend Lead для SaaS и продуктовых команд",
+      "ogDescription": "Портфолио Fullstack / Frontend Lead: dashboard, real-time, FSD, monorepo, RBAC, AI-assisted workflows и legacy migration.",
+      "keywords": "fullstack developer, frontend lead, lead frontend developer, фронтенд бэкенд разработчик, нанять fullstack разработчика, vue разработчик, react разработчик, node.js разработчик, dashboard разработка, saas разработка, product development"
     },
     "case": {
       "titleSuffix": "Кейс",
@@ -14,8 +14,8 @@
       "keywords": "frontend кейс, кейс frontend разработчика, {company}, frontend architecture, dashboard разработка, typescript, vue, react, product development"
     },
     "person": {
-      "jobTitle": "Fullstack Developer",
-      "description": "Fullstack-разработчик с 6+ годами опыта в SaaS и dashboard-продуктах. Помогаю командам строить масштабируемые интерфейсы и надежную серверную часть с предсказуемым delivery."
+      "jobTitle": "Fullstack Developer · Frontend Lead",
+      "description": "Fullstack-разработчик с опытом Frontend Lead: 6+ лет в SaaS и dashboard-продуктах, масштабируемые интерфейсы, RBAC, monorepo и предсказуемый delivery."
     }
   },
   "nav": {
@@ -57,7 +57,7 @@
     "items": [
       {
         "title": "Лидерство frontend-направления",
-        "description": "На последних проектах вел frontend-направление: держал архитектурный вектор, декомпозировал задачи и синхронизировал команду."
+        "description": "На последних проектах вёл frontend-направление как Frontend Lead: архитектура клиентской части, monorepo-структура, качество кода, code review, менторинг и AI-assisted development процессы."
       },
       {
         "title": "Code review как системный процесс",
@@ -133,6 +133,10 @@
         "description": "Проектирую сложные рабочие интерфейсы: роли, фильтры, таблицы, графики и сценарии принятия решений."
       },
       {
+        "title": "RBAC и права доступа",
+        "description": "Проектирую role-based access control: роли, права, ограничения сценариев и согласованность UI с серверной моделью доступа."
+      },
+      {
         "title": "Лендинги и корпоративные сайты",
         "description": "Делаю качественные конверсионные лендинги и сайты: сильная структура, аккуратная вёрстка, высокая скорость и чистая адаптивность."
       },
@@ -172,6 +176,7 @@
     "stackGroups": {
       "core": "Core",
       "architecture": "Архитектура",
+      "backend": "Backend & DB",
       "data": "Данные и UI",
       "platform": "Платформа",
       "ops": "Инфраструктура"
@@ -189,19 +194,20 @@
         },
         "context": "Rizzult — B2B SaaS-платформа influencer marketing для брендов, агентств и e-commerce/app-команд. Нужна была единая система с оплатой за результат, а не за охват: запуск в нескольких странах, прозрачный учёт действий (клики, инсталлы, продажи), ROAS-аналитика и масштабирование без роста операционной нагрузки.",
         "role": [
-          "Fullstack Developer в продуктовой команде",
-          "Разработка и развитие B2B dashboard для Brands / Agencies / Marketers",
+          "Frontend Lead / Fullstack Developer в продуктовой команде",
+          "С нуля спроектировал и разработал frontend-часть dashboard-платформы: таблицы, графики, формы, фильтры, RBAC и real-time сценарии",
           "Проектирование FSD-архитектуры и shared-модулей в monorepo",
-          "Разработка data-heavy экранов: таблицы, отчёты, воронки, KPI-карточки",
-          "Интеграция real-time и аналитических сценариев для performance-маркетинга",
-          "Code review и менторинг разработчиков внутри команды"
+          "Разработка data-heavy экранов и интерфейсов для внутренних бизнес-процессов",
+          "End-to-end функциональность: frontend, REST API, backend на Node.js/NestJS и PHP/Yii2, PostgreSQL, роли и права доступа",
+          "Code review, менторинг и внедрение AI-assisted development процессов в команде"
         ],
         "tasks": [
-          "Масштабировать B2B dashboard под роли владельцев бизнеса, маркетологов и агентств",
+          "Масштабировать B2B dashboard под роли владельцев бизнеса, маркетологов и агентств с RBAC",
           "Развивать многостраничный продуктовый сайт на Nuxt с BFF-слоем",
           "Выстроить FSD-архитектуру и shared-слои в Turborepo",
           "Настроить единый поток данных для ключевых метрик: клики, инсталлы, продажи, ROAS",
           "Внедрить real-time мониторинг и отчётность (TanStack Query/Table, Highcharts, Socket.io)",
+          "Реализовать интерфейсы для таблиц, форм, фильтров и внутренних операционных сценариев",
           "Поддерживать GitLab CI/CD и улучшать стабильность релизов"
         ],
         "solution": [
@@ -209,19 +215,24 @@
           "Turborepo для переиспользуемых пакетов, конфигов и общего UI",
           "Nuxt + BFF-слой для согласованных данных между лендингами и dashboard",
           "TanStack Query/Table + Highcharts для надёжной аналитики и data-heavy экранов",
-          "Socket.io для live-обновлений ключевых метрик",
-          "GSAP + оптимизация Web Vitals/SEO для публичных страниц",
+          "Socket.io для live-обновлений ключевых метрик и real-time sprint board с интеграцией YouTrack API",
+          "Node.js/NestJS и PHP/Yii2 + PostgreSQL для backend-логики, ролей, прав и интеграций с внешними сервисами",
+          "AI-assisted development: анализ legacy-кода, типовые модули, тесты, документация, рефакторинг shared-логики и архитектурные guardrails",
+          "GSAP для UI-анимаций публичных страниц + оптимизация Web Vitals/SEO",
           "GitLab CI/CD + Vitest для стабильной и предсказуемой поставки"
         ],
         "delivered": [
           "B2B dashboard-модули для запуска и контроля creator-кампаний",
+          "Frontend dashboard с нуля: таблицы, графики, формы, фильтры, RBAC и real-time сценарии",
+          "Real-time доска планирования спринтов на Socket.io с синхронизацией задач через YouTrack API",
           "Многостраничный продуктовый сайт на Nuxt с BFF-слоем",
           "KPI-виджеты и отчёты по кликам, продажам, установкам и ROAS",
-          "Real-time обновления критичных метрик без перезагрузки",
           "Единые UI/data-паттерны в monorepo и снижение дублирования",
           "GitLab CI/CD и тестовое покрытие ключевых сценариев на Vitest"
         ],
         "impact": [
+          "Ускорение разработки новых разделов на 35-40% после внедрения FSD и единых frontend-паттернов",
+          "Снижение дублирования кода примерно на 30% после выноса shared UI, типов и утилит в Turborepo",
           "Платформа поддерживает крупный масштаб: 100 000+ зарегистрированных инфлюенсеров",
           "Поддержаны бизнес-сценарии с подтверждёнными результатами: 37 000 000+ performance actions для брендов",
           "Надёжная data-инфраструктура для аналитики кампаний: 6 TB ClickHouse + 100 TB media storage",
@@ -241,8 +252,9 @@
         },
         "context": "Interactive Form — продукт для генерации интерактивных AI-форм из короткого описания бизнеса или ссылки на сайт. Цель платформы: быстро превращать трафик в лиды через персонализированные сценарии вопросов, аналитику конверсии и простую интеграцию на сайт без кода (embed и Google Tag Manager).",
         "role": [
-          "Fullstack Developer (React/Next.js)",
-          "Разработка лендинга, генератора форм и dashboard-приложения",
+          "Fullstack Developer (React/Next.js), part-time",
+          "Разработка лендинга, генератора форм, dashboard и внутренних инструментов",
+          "Участие в backend-модулях на Node.js/NestJS и интеграции frontend с API",
           "Проектирование FSD-модулей в NX monorepo",
           "Реализация пользовательского потока: от signup до первых лидов",
           "Формы, валидация, интеграции и state management для продуктовых сценариев"
@@ -250,7 +262,9 @@
         "tasks": [
           "Собрать лендинг, onboarding и dashboard в едином NX monorepo",
           "Реализовать AI-генерацию формы из описания бизнеса или ссылки",
+          "Настроить AI-assisted parsing сайтов: правила извлечения данных, проверка качества, улучшение промптов и edge cases",
           "Настроить работу с лидами и API через TanStack Query/Table",
+          "Дорабатывать backend API-эндпоинты, бизнес-логику и обработку данных на Node.js/NestJS",
           "Внедрить Zod-валидацию для форм и серверных ответов",
           "Добавить no-code интеграции: Google Analytics, TikTok Pixel, Facebook Pixel, email",
           "Организовать клиентское состояние через Zustand в нужных сценариях"
@@ -259,6 +273,8 @@
           "Next.js App Router для лендинга и dashboard-сценариев",
           "NX monorepo с общими библиотеками UI, API-клиента и утилит",
           "FSD-слои для изоляции бизнес-функций и переиспользования сущностей",
+          "Node.js/NestJS backend: API-эндпоинты, обработка данных и интеграции для internal tools",
+          "AI-assisted parsing: формализация правил извлечения контента и валидация результатов парсинга",
           "Zod + react-hook-form для типобезопасных динамических форм",
           "TanStack Query для server state и предсказуемой работы с данными",
           "Интеграции трекинга конверсий и UI-потоки под быстрый запуск"
@@ -267,6 +283,7 @@
           "Продуктовый лендинг с чётким ценностным предложением",
           "AI-поток создания формы: описание бизнеса -> готовая форма -> embed-код",
           "Dashboard для лидов, управления формами и интеграциями",
+          "Инструменты для AI-assisted parsing и структурирования данных с сайтов",
           "Интеграционные экраны для аналитики, рекламных пикселей и email-уведомлений",
           "Общие form-паттерны с типобезопасной валидацией",
           "Модульная архитектура для параллельной разработки фич"
@@ -294,7 +311,8 @@
           "Fullstack Developer в продуктовой команде",
           "Разработка продуктовых интерфейсов для блогеров и брендов",
           "Разработка dashboard и Telegram WebView сценариев монетизации",
-          "Участие в стратегии и реализации legacy migration",
+          "Участие в стратегии и реализации legacy migration без остановки бизнес-процессов",
+          "Backend на PHP/Yii2: API, бизнес-логика, PostgreSQL и поддержка существующих решений",
           "Интеграция REST API, аналитики и data-виджетов"
         ],
         "tasks": [
@@ -307,9 +325,11 @@
         ],
         "solution": [
           "Strangler pattern: новые модули на React, legacy изолируется постепенно",
+          "AI-assisted migration: декомпозиция legacy-кода, reusable-компоненты и ускорение типовых UI-сценариев",
           "Next.js для единообразного routing и нужных SSR/SSG сценариев",
           "Bootstrap UI + SCSS для поддержки legacy-интерфейсов",
           "Mantine UI для современных модулей и ускорения продуктовой разработки",
+          "PHP/Yii2 + PostgreSQL + REST API для клиент-серверной логики и интеграций",
           "REST API layer и Highcharts для аналитики публикаций, действий и выплат",
           "Docker + GitLab CI/CD + Jest для стабильной сборки и контроля качества"
         ],
@@ -322,7 +342,9 @@
           "GitLab CI/CD pipeline и тестовое покрытие критичных модулей"
         ],
         "impact": [
-          "Непрерывная поставка фич во время миграции",
+          "Непрерывная поставка фич во время миграции без остановки текущих бизнес-процессов",
+          "Сокращение времени миграции отдельных dashboard-разделов примерно на 40% через AI-assisted refactoring",
+          "Уменьшение объёма legacy-кода примерно на 30% в мигрируемых модулях",
           "Поддержка продукта на высоком масштабе аудитории и рекламных интеграций",
           "Снижение технического долга в критичных пользовательских потоках",
           "Более прозрачная и управляемая аналитика для модели «оплата за результат»",
@@ -360,7 +382,11 @@
       },
       {
         "title": "Architecture",
-        "items": ["FSD", "Turborepo", "Nx Monorepo", "Design System"]
+        "items": ["FSD", "Turborepo", "Nx Monorepo", "Design System", "RBAC"]
+      },
+      {
+        "title": "Backend & DB",
+        "items": ["Node.js", "NestJS", "PHP", "Yii2", "PostgreSQL", "Redis", "REST API", "WebSocket"]
       },
       {
         "title": "Data & UI",
