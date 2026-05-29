@@ -2,12 +2,12 @@
   <div>
     <SectionsHero />
     <SectionsPositioning />
+    <SectionsTechStack />
     <SectionsManagementSkills />
     <SectionsAiSkills />
-    <SectionsAchievements />
     <SectionsExpertise />
+    <SectionsAchievements />
     <SectionsFeaturedCases />
-    <SectionsTechStack />
     <SectionsInternational />
     <SectionsContactCta />
   </div>

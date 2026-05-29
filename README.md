@@ -28,9 +28,9 @@ pnpm format       # Prettier
 app/
   pages/           # Routes (index.vue, cases/[slug].vue)
   components/      # layout, sections, cases, ui
-  composables/     # useTheme, useLocale, useSiteUrl, useFadeUp
+  composables/     # useTheme, useLocale, useSiteUrl
   data/cases.ts    # Case slugs, tags, stack
-  assets/css/      # tailwind.css (design tokens)
+  assets/css/      # globals.css (design tokens)
 i18n/locales/      # ru.json, en.json (lazy-loaded)
 i18n/i18n.config.ts # vue-i18n runtime options only
 public/            # images, CV PDFs, favicon

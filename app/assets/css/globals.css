@@ -86,28 +86,6 @@
   --glow-2: #5ee3ff;
 }
 
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-
-  html {
-    @apply scroll-smooth;
-  }
-
-  body {
-    @apply bg-background text-foreground font-sans antialiased;
-  }
-
-  img {
-    @apply h-auto max-w-full;
-  }
-
-  button {
-    @apply cursor-pointer;
-  }
-}
-
 @layer utilities {
   .glass-card {
     @apply border-border bg-card/70 dark:bg-card/40 rounded-2xl border shadow-[0_1px_0_0_rgba(255,255,255,0.04)_inset]
@@ -178,5 +156,23 @@
   .glow-blob-delayed,
   .cta-glow {
     animation: none;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  img {
+    @apply h-auto max-w-full;
+  }
+
+  button {
+    @apply cursor-pointer;
   }
 }

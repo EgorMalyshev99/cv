@@ -9,7 +9,7 @@
         <PhArrowLeft :size="16" />
         {{ t('case.back') }}
       </NuxtLink>
-      <header v-fade-up class="border-border mb-12 border-b pb-10">
+      <header class="border-border mb-12 border-b pb-10">
         <p class="text-accent mb-3 text-sm font-medium">
           {{ t(`cases.list.${slug}.hero.eyebrow`) }}
         </p>

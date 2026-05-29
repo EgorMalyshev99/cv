@@ -1,7 +1,7 @@
 <template>
   <section id="contact" class="py-20 md:py-28">
     <div class="container">
-      <GlassCard v-fade-up class="p-8 text-center md:p-12">
+      <GlassCard class="p-8 text-center md:p-12">
         <LayoutSectionHeading
           :eyebrow="t('contact.eyebrow')"
           :title="t('contact.title')"

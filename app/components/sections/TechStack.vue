@@ -8,7 +8,7 @@
         class="mb-10"
       />
       <div class="grid gap-6 md:grid-cols-2">
-        <GlassCard v-for="(group, index) in groups" :key="index" v-fade-up class="p-5">
+        <GlassCard v-for="(group, index) in groups" :key="index" class="p-5">
           <h3 class="text-foreground mb-3 flex items-center gap-2 text-sm font-semibold">
             <component :is="groupIcons[index]" class="text-primary shrink-0" :size="18" weight="duotone" />
             {{ group.title }}
@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import { PhBracketsCurly, PhChartBar, PhPalette, PhTreeStructure } from '@phosphor-icons/vue'
+import { PhBracketsCurly, PhChartBar, PhPalette, PhTestTube, PhTreeStructure } from '@phosphor-icons/vue'
 interface StackGroup {
   title: string
   items: string[]
@@ -37,5 +37,5 @@ const groups = computed(() =>
   }))
 )
 
-const groupIcons = [PhBracketsCurly, PhTreeStructure, PhChartBar, PhPalette]
+const groupIcons = [PhBracketsCurly, PhTreeStructure, PhChartBar, PhPalette, PhTestTube]
 </script>

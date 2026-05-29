@@ -1,5 +1,5 @@
 <template>
-  <header v-fade-up :class="cn('max-w-3xl', centered && 'mx-auto text-center', props.class)">
+  <header :class="cn('max-w-3xl', centered && 'mx-auto text-center', props.class)">
     <p v-if="eyebrow" class="text-accent mb-3 text-sm font-medium tracking-wide uppercase">
       {{ eyebrow }}
     </p>
@@ -15,7 +15,6 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { cn } from '@/lib/utils'
-import { vFadeUp } from '@/composables/useFadeUp'
 
 const props = defineProps<{
   eyebrow?: string

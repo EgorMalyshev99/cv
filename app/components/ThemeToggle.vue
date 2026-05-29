@@ -1,20 +1,15 @@
 <template>
-  <ClientOnly>
-    <UiButton
-      variant="ghost"
-      size="icon"
-      :aria-label="isDark ? t('theme.light') : t('theme.dark')"
-      @click="toggleTheme()"
-    >
-      <PhSun v-if="isDark" :size="16" />
-      <PhMoon v-else :size="16" />
-    </UiButton>
-  </ClientOnly>
+  <UiButton variant="ghost" size="icon" @click="toggleTheme()">
+    <span class="sr-only dark:hidden">{{ t('theme.dark') }}</span>
+    <span class="sr-only hidden dark:inline">{{ t('theme.light') }}</span>
+    <PhSun :size="16" class="hidden dark:block" />
+    <PhMoon :size="16" class="dark:hidden" />
+  </UiButton>
 </template>
 
 <script setup lang="ts">
 import { PhMoon, PhSun } from '@phosphor-icons/vue'
 
 const { t } = useI18n()
-const { isDark, toggleTheme } = useTheme()
+const { toggleTheme } = useTheme()
 </script>

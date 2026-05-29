@@ -8,7 +8,7 @@
         class="mb-10"
       />
       <ul class="grid gap-6 lg:grid-cols-3">
-        <li v-for="caseEntry in cases" :key="caseEntry.slug" v-fade-up>
+        <li v-for="caseEntry in cases" :key="caseEntry.slug">
           <CasesCaseCard :case-entry="caseEntry" />
         </li>
       </ul>

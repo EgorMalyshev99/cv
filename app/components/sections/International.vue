@@ -1,7 +1,7 @@
 <template>
   <section class="py-20 md:py-24">
     <div class="container">
-      <GlassCard v-fade-up class="p-8 md:p-10">
+      <GlassCard class="p-8 md:p-10">
         <LayoutSectionHeading
           :eyebrow="t('international.eyebrow')"
           :title="t('international.title')"

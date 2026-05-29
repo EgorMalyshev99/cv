@@ -8,7 +8,7 @@
         class="mb-10"
       />
       <ul class="grid gap-4 md:grid-cols-3">
-        <li v-for="(item, index) in items" :key="index" v-fade-up>
+        <li v-for="(item, index) in items" :key="index">
           <GlassCard class="h-full p-5">
             <p class="text-primary text-2xl font-semibold tracking-tight">{{ item.metric }}</p>
             <p class="text-foreground mt-3 flex items-center gap-2 text-sm font-medium">

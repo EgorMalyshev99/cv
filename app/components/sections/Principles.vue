@@ -8,7 +8,7 @@
         class="mb-10"
       />
       <ul class="grid gap-4 sm:grid-cols-2">
-        <li v-for="(item, index) in items" :key="index" v-fade-up>
+        <li v-for="(item, index) in items" :key="index">
           <GlassCard class="p-5">
             <h3 class="mb-2 flex items-center gap-2 font-semibold">
               <component :is="principleIcons[index]" class="text-primary shrink-0" :size="18" weight="duotone" />

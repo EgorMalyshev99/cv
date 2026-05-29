@@ -33,7 +33,6 @@
     "title": "Делаю продукт, который драйвит рост бизнеса",
     "lead": "Проектирую и развиваю fullstack-решения для SaaS и dashboard-продуктов: от быстрого запуска фич на frontend до надежной backend-логики и устойчивой архитектуры на рост команды и нагрузки.",
     "body": "6+ лет коммерческого опыта: TypeScript, Vue/Nuxt, React/Next.js, Node.js/NestJS, PHP/Yii2, FSD, monorepo, real-time интерфейсы и дизайн-системы.",
-    "support": "Закрываю end-to-end задачи: от UX и API-интеграций до backend-логики, ролей, прав доступа и устойчивого релизного процесса.",
     "meta": "Open to product teams and outsource projects · Remote / International",
     "ctaPrimary": "Обсудить сотрудничество",
     "ctaSecondary": "Посмотреть кейсы",
@@ -85,7 +84,7 @@
       },
       {
         "title": "AI-agent workflows",
-        "description": "Применяю агентные сценарии для рутинных задач: подготовка шаблонных модулей, проверка архитектурных ограничений, технические черновики."
+        "description": "Агентные сценарии для шаблонов, guardrails и черновиков; настраиваю скиллы, плагины и MCP-серверы — репозиторий и внешние инструменты в одном контуре."
       },
       {
         "title": "Тесты и контроль регрессий",
@@ -357,29 +356,34 @@
     "groups": [
       {
         "title": "Core",
-        "items": ["TypeScript", "Vue 3", "Nuxt", "React", "Next.js"]
+        "items": ["TypeScript", "Vue 2/3", "Nuxt", "React", "Next.js"]
       },
       {
         "title": "Architecture",
-        "items": ["FSD", "Turborepo", "NX", "Monorepo", "Design System"]
+        "items": ["FSD", "Turborepo", "Nx Monorepo", "Design System"]
       },
       {
         "title": "Data & UI",
-        "items": ["TanStack Query", "TanStack Table", "Highcharts", "Socket.io", "Zod", "Zustand"]
+        "items": [
+          "TanStack Query",
+          "TanStack Table",
+          "Highcharts",
+          "Socket.io",
+          "Zod",
+          "Zustand",
+          "Pinia",
+          "Redux",
+          "React Hook Form",
+          "VeeValidate"
+        ]
       },
       {
-        "title": "Styling & Quality",
-        "items": [
-          "SCSS",
-          "Bootstrap UI",
-          "Mantine UI",
-          "GSAP",
-          "Vitest",
-          "Jest",
-          "Code Review",
-          "Docker",
-          "GitLab CI/CD"
-        ]
+        "title": "Styling",
+        "items": ["Tailwind CSS", "shadcn/ui", "Material UI", "SCSS", "Bootstrap", "GSAP"]
+      },
+      {
+        "title": "CI/CD & Quality",
+        "items": ["Vite", "Webpack", "Vitest", "Jest", "Code Review", "Docker", "GitLab CI", "GitHub Actions"]
       }
     ]
   },

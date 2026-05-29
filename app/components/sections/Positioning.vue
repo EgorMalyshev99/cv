@@ -8,7 +8,7 @@
         class="mb-10"
       />
       <ul class="grid gap-4 md:grid-cols-2">
-        <li v-for="(item, index) in items" :key="index" v-fade-up>
+        <li v-for="(item, index) in items" :key="index" class="h-full">
           <GlassCard class="p-5">
             <div class="flex items-start gap-3">
               <component

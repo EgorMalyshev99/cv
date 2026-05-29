@@ -58,7 +58,6 @@ export const cases: CaseEntry[] = [
       'React',
       'Next.js',
       'TypeScript',
-      'Legacy Migration',
       'REST API',
       'SCSS',
       'Bootstrap UI',
@@ -75,7 +74,7 @@ export const cases: CaseEntry[] = [
         groupKey: 'cases.stackGroups.platform',
         items: ['Telegram WebView', 'REST API', 'Highcharts', 'Bootstrap UI', 'Mantine UI'],
       },
-      { groupKey: 'cases.stackGroups.ops', items: ['Docker', 'GitLab CI/CD', 'CI/CD', 'Legacy Migration', 'Jest'] },
+      { groupKey: 'cases.stackGroups.ops', items: ['Docker', 'GitLab CI/CD', 'CI/CD', 'Jest'] },
     ],
   },
 ]
