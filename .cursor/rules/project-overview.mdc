@@ -1,0 +1,30 @@
+---
+description: Project overview and goals for the personal CV landing
+alwaysApply: true
+---
+
+# Project overview
+
+Personal landing for a **Fullstack Developer** (6 years commercial experience, frontend-first positioning without explicit grade).
+
+## Audience
+
+- HR and recruiters
+- CTOs and engineering managers
+- CEOs and founders
+- International remote-first companies
+
+## Product goals
+
+- Showcase dashboard/SaaS frontend expertise via **preview case cards** on home and **full case studies** on `/cases/:slug`
+- Present separate homepage blocks for **management skills**, **AI skills**, and **measurable achievements**
+- Communicate stack: TypeScript, Vue/Nuxt, React/Next.js, FSD, monorepos, real-time, design systems
+- Signal **English B2** and remote readiness
+
+## Visual system
+
+- Premium dark-tech + clean light mode
+- Editorial layout, modern SaaS feel
+- Dark background, soft gradients, thin borders, glass cards, strong typography
+- Minimal animation (fade-up, card hover, slow gradient drift)
+- Avoid cyberpunk, aggressive neon, heavy 3D

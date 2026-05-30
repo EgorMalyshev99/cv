@@ -26,8 +26,3 @@ logs
 # IDE
 .vscode
 .idea
-
-# AI Generated Files
-.agents
-.cursor
-AGENTS.md

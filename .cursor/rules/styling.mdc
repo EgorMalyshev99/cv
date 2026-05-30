@@ -1,0 +1,59 @@
+---
+description: Tailwind and design token styling rules
+alwaysApply: true
+---
+
+# Styling rules
+
+## Design tokens
+
+- **Hex colors only** in `src/style.css` (`:root` for light, `.dark` for dark)
+- Map tokens to Tailwind via `@theme inline` (`--color-background`, etc.)
+- In components use semantic classes: `bg-background`, `text-foreground`, `text-muted-foreground`, `border-border`, `bg-card`
+
+## Tailwind v4
+
+- Main entry: `@import "tailwindcss"` in `src/style.css`
+- Dark mode: class on `<html>` — `@custom-variant dark (&:is(.dark *))`
+- Prefer utilities over custom CSS in Vue files
+- **No arbitrary sizes** — use scale tokens instead of `[Xrem]` / `[Xpx]` brackets:
+  - `h-[24rem]` → `h-96`, `w-[24rem]` → `w-96`, both → `size-96`
+  - `h-[28rem]` → `h-112`, `w-[28rem]` → `w-112`, both → `size-112`
+  - When `h-*` and `w-*` match, collapse into `size-*`
+
+## Layout container
+
+- Use `container` utility for section/page wrappers — **never** `mx-auto px-4 md:px-6`
+- `container` is defined in `src/style.css` via `@utility`: sets `margin-inline: auto`, `padding-inline: 1rem`
+- **No additional `max-w-*`** alongside `container` — max-width is already baked in
+
+```html
+<!-- ❌ BAD -->
+<div class="mx-auto max-w-6xl px-4 md:px-6">
+
+<!-- ✅ GOOD -->
+<div class="container">
+```
+
+## Shared utilities (style.css)
+
+- `.glass-card` — glass surface
+- `.text-gradient` — accent gradient text
+- `.bg-grid` — subtle dot grid
+- `.cta-glow` — primary CTA glow
+- `.fade-up` / `.fade-up.is-visible` — scroll reveal
+
+## Component styling
+
+- Reuse `GlassCard`, `SectionHeading`, `TechTag` before inventing new patterns
+- **Light and dark parity** required for every new component
+- `@apply` only inside `src/style.css` `@layer base` when needed
+
+## Motion
+
+- Respect `prefers-reduced-motion: reduce`
+- No parallax, no heavy 3D, no aggressive neon animations
+
+## Formatting
+
+- Prettier with `prettier-plugin-tailwindcss`, `prettier-plugin-classnames`, `prettier-plugin-merge` (merge **last**)

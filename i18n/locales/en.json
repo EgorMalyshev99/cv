@@ -30,7 +30,7 @@
     "fullName": "Egor Malyshev",
     "fullRole": "Fullstack Developer",
     "photoAlt": "Fullstack Developer portrait",
-    "title": "I accelerate product growth with chaos-free frontend delivery",
+    "title": "I help product teams build and improve web products",
     "lead": "I design and build fullstack solutions for SaaS and dashboard products: fast frontend feature delivery, reliable backend logic, and architecture that scales with team and product growth.",
     "body": "6+ years of commercial experience with TypeScript, Vue/Nuxt, React/Next.js, Node.js/NestJS, PHP/Yii2, FSD, monorepos, real-time interfaces, and design systems.",
     "meta": "Open to product teams and outsource projects · Remote / International",
@@ -39,15 +39,37 @@
     "ctaDownloadCv": "Download CV"
   },
   "positioning": {
-    "eyebrow": "Positioning",
+    "eyebrow": "Value for product and team",
     "title": "A fullstack partner for product teams",
-    "subtitle": "I work at the intersection of engineering and product, turning business goals into reliable end-to-end delivery.",
+    "subtitle": "I work at the intersection of engineering and product: owning fullstack delivery end-to-end, strengthening team practices, and keeping releases predictable.",
     "items": [
-      "Fast product onboarding with focus on high-impact priorities and measurable business outcomes",
-      "Scalable fullstack architecture with strong frontend, clear API contracts, and stable backend flows",
-      "Faster delivery through reusable UI, shared modules, monorepo practices, and engineering standards",
-      "Strong execution in data-heavy and real-time scenarios with roles and access control in SaaS/dashboard domains",
-      "Predictable quality through testing, code review, transparent releases, and regression control"
+      {
+        "title": "Product value",
+        "description": "I quickly get into product context and focus on work that moves business metrics.",
+        "points": [
+          "Dashboard, SaaS, and data-heavy interfaces",
+          "RBAC, roles, access control, and real user flows",
+          "Landing pages and websites with strong structure, performance, and responsiveness"
+        ]
+      },
+      {
+        "title": "Architecture and delivery",
+        "description": "I build frontend and fullstack foundations that are easier to scale, maintain, and evolve.",
+        "points": [
+          "Clear API contracts, stable backend logic, and end-to-end ownership",
+          "FSD, monorepos, shared UI, design systems, and reusable modules",
+          "Legacy migration without stopping feature delivery or taking big-bang risks"
+        ]
+      },
+      {
+        "title": "Team multiplier",
+        "description": "I take ownership of engineering practices, communication, and quality so the team moves faster.",
+        "points": [
+          "Code review, mentoring, and onboarding for middle/junior engineers",
+          "Translating business goals into technical plans: timelines, risks, and trade-offs",
+          "Transparent releases, regression control, and shared engineering standards"
+        ]
+      }
     ]
   },
   "management": {
@@ -75,7 +97,7 @@
   },
   "aiSkills": {
     "eyebrow": "AI skills",
-    "title": "Where AI meaningfully accelerates delivery",
+    "title": "AI tooling for engineering delivery",
     "subtitle": "I use AI as an engineering tool in a disciplined way: measurable speedups with quality control.",
     "items": [
       {

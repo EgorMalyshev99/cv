@@ -3,9 +3,7 @@
     <SectionsHero />
     <SectionsPositioning />
     <SectionsTechStack />
-    <SectionsManagementSkills />
     <SectionsAiSkills />
-    <SectionsExpertise />
     <SectionsAchievements />
     <SectionsFeaturedCases />
     <SectionsInternational />
