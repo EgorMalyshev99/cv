@@ -124,9 +124,9 @@
     "subtitle": "I focus on metrics that matter for business: speed, scalability, and team efficiency.",
     "items": [
       {
-        "metric": "35-40%",
+        "metric": "40%",
         "title": "Faster delivery of new modules",
-        "description": "After introducing FSD and shared frontend patterns, the team shipped new sections significantly faster."
+        "description": "After introducing FSD and a unified API layer, the team shipped typical sections significantly faster."
       },
       {
         "metric": "-30%",
@@ -212,7 +212,7 @@
       "rizzult-dashboard": {
         "title": "Scalable dashboard platform",
         "company": "Rizzult",
-        "stackLine": "Vue / Nuxt / TypeScript",
+        "stackLine": "Vue / Nuxt / React / Next.js / TypeScript",
         "preview": "Development of a B2B performance creator platform for brands and agencies — clients include KFC, McDonald's, iHerb, and Yango Comida. From a Vue dashboard core to a Nuxt multi-page website with a BFF layer. The product focused on measurable marketing outcomes (ROAS, clicks, installs, sales), creator campaign automation, and transparent analytics for business teams.",
         "hero": {
           "eyebrow": "Rizzult · Dashboard platform",
@@ -225,7 +225,8 @@
           "Designed and built the dashboard frontend from scratch: tables, charts, forms, filters, RBAC, and real-time scenarios",
           "Design of FSD architecture and shared modules in the monorepo",
           "Data-heavy screens and interfaces for internal business processes",
-          "End-to-end delivery: frontend, REST API, backend on Node.js/NestJS and PHP/Yii2, PostgreSQL, roles, and access control",
+          "End-to-end delivery on Vue/Nuxt and React/Next.js: REST API, backend on Node.js/NestJS and PHP/Yii2, PostgreSQL, roles, and access control",
+          "Sentry for error monitoring and logging; performance audit and optimization of key dashboard modules",
           "Code review, mentoring, and AI-assisted development processes inside the team"
         ],
         "tasks": [
@@ -235,6 +236,8 @@
           "Build unified data flows for clicks, installs, sales, and ROAS",
           "Implement real-time monitoring with TanStack Query/Table, Highcharts, and Socket.io",
           "Deliver interfaces for tables, forms, filters, and internal operational workflows",
+          "Integrate Sentry and improve performance of critical dashboard modules",
+          "Cover key user flows with Playwright e2e tests and Vitest unit tests",
           "Support GitLab CI/CD and improve release stability"
         ],
         "solution": [
@@ -245,8 +248,10 @@
           "Socket.io for live metric updates and a real-time sprint board integrated with YouTrack API",
           "Node.js/NestJS and PHP/Yii2 + PostgreSQL for backend logic, roles, permissions, and external service integrations",
           "AI-assisted development: legacy analysis, boilerplate modules, tests, documentation, shared-logic refactoring, and architectural guardrails",
+          "Sentry for production error tracking, logging, and faster incident response",
+          "Performance audit and optimization of data-heavy dashboard modules",
           "GSAP for UI animations on public pages plus Web Vitals/SEO optimization",
-          "GitLab CI/CD + Vitest for reliable delivery and regression control"
+          "GitLab CI/CD + Playwright e2e and Vitest unit tests for reliable delivery and regression control"
         ],
         "delivered": [
           "B2B dashboard modules for launching and controlling creator campaigns",
@@ -255,10 +260,13 @@
           "Multi-page Nuxt website with BFF integration",
           "KPI widgets and reports for clicks, sales, installs, and ROAS",
           "Unified UI/data patterns in the monorepo with lower duplication",
-          "GitLab CI/CD pipeline and Vitest coverage for key flows"
+          "Sentry integration for error monitoring across dashboard modules",
+          "Playwright e2e and Vitest coverage for critical user flows",
+          "Performance improvements on key dashboard screens after audit",
+          "GitLab CI/CD pipeline for monorepo releases"
         ],
         "impact": [
-          "35-40% faster delivery of new sections after FSD and shared frontend patterns",
+          "40% faster delivery of typical sections after FSD and a unified API layer",
           "Around 30% less code duplication after moving shared UI, types, and utilities into Turborepo packages",
           "Platform scale support: 100,000+ registered influencers",
           "Business-proof campaign tracking scenarios: 37,000,000+ performance actions for brands",
@@ -277,7 +285,7 @@
           "title": "AI startup dashboard & landing",
           "lead": "Landing and dashboard for an AI product: user flows, settings, and data-driven interfaces in an NX monorepo."
         },
-        "context": "Interactive Form is a product that generates interactive AI forms from a short business description or a website link. The platform goal was to turn traffic into qualified leads faster via personalized question flows, conversion analytics, and no-code website integration (embed + Google Tag Manager).",
+        "context": "Interactive Form is an early-stage AI startup for automating data collection and processing. The product generates interactive AI forms from a short business description or a website link. On pre-launch, the goal was to turn traffic into qualified leads faster via personalized question flows, conversion analytics, and no-code website integration (embed + Google Tag Manager).",
         "role": [
           "Fullstack Developer (React/Next.js), full-time",
           "Development of landing, form generation flow, dashboard, and internal tools",
@@ -340,6 +348,7 @@
           "Dashboard and Telegram WebView monetization flow development",
           "Participation in legacy migration strategy and implementation without stopping business operations",
           "Backend on PHP/Yii2: API, business logic, PostgreSQL, and support for existing product solutions",
+          "Sentry for error monitoring and performance improvements on key platform sections",
           "REST API integration, analytics, and data visualization"
         ],
         "tasks": [
@@ -358,6 +367,7 @@
           "Mantine UI for modern modules and faster delivery",
           "PHP/Yii2 + PostgreSQL + REST API for client-server logic and integrations",
           "REST API layer and Highcharts for campaign and payout analytics",
+          "Sentry for production error tracking and faster debugging of critical flows",
           "Docker + GitLab CI/CD + Jest for stable builds and quality control"
         ],
         "delivered": [
@@ -366,7 +376,8 @@
           "Migrated key legacy pages without a big-bang rewrite",
           "Charts and reports for campaign efficiency and payouts",
           "Interfaces for offer showcases and promo mechanics",
-          "GitLab CI/CD pipeline and Jest coverage for critical modules"
+          "GitLab CI/CD pipeline and Jest coverage for critical modules",
+          "Sentry monitoring and performance improvements on key dashboard sections"
         ],
         "impact": [
           "Continuous feature delivery during migration without stopping current business operations",
@@ -437,7 +448,18 @@
       },
       {
         "title": "CI/CD & Quality",
-        "items": ["Vite", "Webpack", "Vitest", "Jest", "Code Review", "Docker", "GitLab CI", "GitHub Actions"]
+        "items": [
+          "Vite",
+          "Webpack",
+          "Vitest",
+          "Playwright",
+          "Jest",
+          "Sentry",
+          "Code Review",
+          "Docker",
+          "GitLab CI",
+          "GitHub Actions"
+        ]
       }
     ]
   },

@@ -23,6 +23,8 @@ export const cases: CaseEntry[] = [
     tags: [
       'Vue',
       'Nuxt',
+      'React',
+      'Next.js',
       'TypeScript',
       'FSD',
       'Turborepo',
@@ -34,12 +36,14 @@ export const cases: CaseEntry[] = [
       'NestJS',
       'PostgreSQL',
       'Vitest',
+      'Playwright',
+      'Sentry',
       'Docker',
       'GitLab',
       'Design System',
     ],
     stack: [
-      { groupKey: 'cases.stackGroups.core', items: ['Vue 3', 'Nuxt', 'TypeScript'] },
+      { groupKey: 'cases.stackGroups.core', items: ['Vue 3', 'Nuxt', 'React', 'Next.js', 'TypeScript'] },
       { groupKey: 'cases.stackGroups.architecture', items: ['FSD', 'Turborepo', 'Design System', 'RBAC'] },
       {
         groupKey: 'cases.stackGroups.backend',
@@ -49,7 +53,7 @@ export const cases: CaseEntry[] = [
         groupKey: 'cases.stackGroups.data',
         items: ['TanStack Query', 'TanStack Table', 'Highcharts', 'Socket.io', 'GSAP', 'YouTrack API', 'Pinia'],
       },
-      { groupKey: 'cases.stackGroups.ops', items: ['Vite', 'Vitest', 'Docker', 'GitLab CI'] },
+      { groupKey: 'cases.stackGroups.ops', items: ['Vite', 'Vitest', 'Playwright', 'Sentry', 'Docker', 'GitLab CI'] },
     ],
   },
   {
@@ -86,6 +90,7 @@ export const cases: CaseEntry[] = [
       'Mantine UI',
       'Highcharts',
       'Jest',
+      'Sentry',
       'CI/CD',
       'Docker',
       'GitLab',
@@ -105,7 +110,7 @@ export const cases: CaseEntry[] = [
         groupKey: 'cases.stackGroups.platform',
         items: ['Telegram WebView', 'Bootstrap UI', 'Mantine UI'],
       },
-      { groupKey: 'cases.stackGroups.ops', items: ['Docker', 'GitLab CI/CD', 'CI/CD', 'Jest'] },
+      { groupKey: 'cases.stackGroups.ops', items: ['Docker', 'GitLab CI/CD', 'CI/CD', 'Jest', 'Sentry'] },
     ],
   },
 ]
