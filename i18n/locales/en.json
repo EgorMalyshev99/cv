@@ -32,7 +32,7 @@
     "photoAlt": "Fullstack Developer portrait",
     "title": "I help product teams build and improve web products",
     "lead": "I design and build fullstack solutions for SaaS and dashboard products: fast frontend feature delivery, reliable backend logic, and architecture that scales with team and product growth.",
-    "body": "6+ years of commercial experience with TypeScript, Vue/Nuxt, React/Next.js, Node.js/NestJS, PHP/Yii2, FSD, monorepos, real-time interfaces, and design systems.",
+    "body": "6+ years of commercial experience with TypeScript, Vue/Nuxt, React/Next.js, Node.js/NestJS, PHP/Yii2, FSD, monorepos, real-time interfaces, and design systems. Led frontend direction for a product team of 3 developers.",
     "meta": "Open to product teams and outsource projects · Remote / International",
     "ctaPrimary": "Discuss collaboration",
     "ctaSecondary": "View case studies",
@@ -62,12 +62,12 @@
         ]
       },
       {
-        "title": "Team multiplier",
-        "description": "I take ownership of engineering practices, communication, and quality so the team moves faster.",
+        "title": "Scaling delivery",
+        "description": "I help teams grow in speed and quality without chaos in architecture and releases.",
         "points": [
-          "Code review, mentoring, and onboarding for middle/junior engineers",
-          "Translating business goals into technical plans: timelines, risks, and trade-offs",
-          "Transparent releases, regression control, and shared engineering standards"
+          "A team of 3 frontend developers ran 3+ parallel workstreams without cross-feature conflicts",
+          "Onboarding: new developers reach independent tasks in 1–2 weeks instead of a month",
+          "Predictable releases and fewer regressions as the codebase and team scale"
         ]
       }
     ]
@@ -79,7 +79,7 @@
     "items": [
       {
         "title": "Frontend direction leadership",
-        "description": "In recent projects I led the frontend direction as Frontend Lead: client architecture, monorepo structure, code quality, code review, mentoring, and AI-assisted development processes."
+        "description": "In recent projects I led the frontend direction as Frontend Lead for a product team of 3 frontend developers: client architecture, monorepo structure, code quality, code review, mentoring, and AI-assisted development. Built onboarding so new developers reach independent tasks in 1–2 weeks instead of a month."
       },
       {
         "title": "Code review as a system",
@@ -134,14 +134,19 @@
         "description": "I moved shared UI, types, and helpers into dedicated packages, simplifying maintenance and release flow."
       },
       {
-        "metric": "40%",
-        "title": "Faster legacy migration streams",
-        "description": "With AI-assisted refactoring and reusable components, I reduced migration time for dashboard modules."
+        "metric": "40%+",
+        "title": "Less legacy code in critical flows",
+        "description": "During incremental migration from PHP/jQuery to React/Next.js, I reduced legacy code volume in critical user scenarios while keeping feature delivery continuous."
       },
       {
         "metric": "E2E ownership",
         "title": "End-to-end delivery ownership",
         "description": "I owned flows from UI and API integration to backend logic, access control, and release stability."
+      },
+      {
+        "metric": "1–2 weeks",
+        "title": "Onboarding to independent work",
+        "description": "With documentation, standards, and code review templates, new developers reached independent tasks in 1–2 weeks instead of a month."
       }
     ]
   },
@@ -208,15 +213,15 @@
         "title": "Scalable dashboard platform",
         "company": "Rizzult",
         "stackLine": "Vue / Nuxt / TypeScript",
-        "preview": "Development of a B2B performance creator platform for brands and agencies: from a Vue dashboard core to a Nuxt multi-page website with a BFF layer. The product focused on measurable marketing outcomes (ROAS, clicks, installs, sales), creator campaign automation, and transparent analytics for business teams.",
+        "preview": "Development of a B2B performance creator platform for brands and agencies — clients include KFC, McDonald's, iHerb, and Yango Comida. From a Vue dashboard core to a Nuxt multi-page website with a BFF layer. The product focused on measurable marketing outcomes (ROAS, clicks, installs, sales), creator campaign automation, and transparent analytics for business teams.",
         "hero": {
           "eyebrow": "Rizzult · Dashboard platform",
           "title": "Scalable dashboard platform",
           "lead": "Product dashboard system for data, roles, and user scenarios in a scalable monorepo."
         },
-        "context": "Rizzult is a B2B SaaS performance influencer marketing platform for brands, agencies, and app/e-commerce teams. The product needed a unified system where businesses could run controllable creator campaigns with pay-for-results economics rather than pure reach: multi-country launch flows, transparent action tracking (clicks, installs, sales), ROAS analytics, and scalable operations without expanding the marketing team.",
+        "context": "Rizzult is a B2B SaaS performance influencer marketing platform for brands, agencies, and app/e-commerce teams — with clients including KFC, McDonald's, iHerb, and Yango Comida. The product needed a unified system where businesses could run controllable creator campaigns with pay-for-results economics rather than pure reach: multi-country launch flows, transparent action tracking (clicks, installs, sales), ROAS analytics, and scalable operations without expanding the marketing team.",
         "role": [
-          "Frontend Lead / Fullstack Developer on the product team",
+          "Frontend Lead / Fullstack Developer on the product team — led a team of 3 frontend developers",
           "Designed and built the dashboard frontend from scratch: tables, charts, forms, filters, RBAC, and real-time scenarios",
           "Design of FSD architecture and shared modules in the monorepo",
           "Data-heavy screens and interfaces for internal business processes",
@@ -274,7 +279,7 @@
         },
         "context": "Interactive Form is a product that generates interactive AI forms from a short business description or a website link. The platform goal was to turn traffic into qualified leads faster via personalized question flows, conversion analytics, and no-code website integration (embed + Google Tag Manager).",
         "role": [
-          "Fullstack Developer (React/Next.js), part-time",
+          "Fullstack Developer (React/Next.js), full-time",
           "Development of landing, form generation flow, dashboard, and internal tools",
           "Backend modules on Node.js/NestJS and frontend integration with API",
           "FSD module design in NX monorepo",
@@ -328,7 +333,7 @@
           "title": "Legacy frontend migration to a modern stack",
           "lead": "Incremental transition from PHP/jQuery/SCSS to React/Next.js and TypeScript while continuously shipping product features."
         },
-        "context": "Perfluence is a large platform for creators, Telegram channels, and brands in Russia and CIS with a pay-for-results model. During product growth, the platform reported 518,000 creators and RUB 6.9B paid out to creators. The challenge was to keep shipping new B2B/B2C functionality while migrating legacy frontend to a modern stack without disrupting releases.",
+        "context": "Perfluence is a large influencer marketing platform for creators, Telegram channels, and brands in Russia and CIS with a pay-for-results model — 295k+ creators and 200+ client companies. The challenge was to keep shipping new B2B/B2C functionality while migrating legacy frontend to a modern stack without disrupting releases.",
         "role": [
           "Fullstack Developer on the product team",
           "Product interface development for creators and brands",
@@ -365,8 +370,9 @@
         ],
         "impact": [
           "Continuous feature delivery during migration without stopping current business operations",
-          "Around 40% faster migration of individual dashboard sections through AI-assisted refactoring",
-          "Around 30% less legacy code in migrated modules",
+          "Around 50% faster development of new sections after extracting reusable components and API wrappers",
+          "25–30% faster delivery of new internal screens through shared table, filter, form, and layout components",
+          "40%+ less legacy code in critical user scenarios after incremental migration to React/Next.js",
           "Product support at large audience and campaign scale",
           "Reduced technical debt in critical user flows",
           "More transparent and controllable analytics for the pay-for-results model",
@@ -408,7 +414,7 @@
       },
       {
         "title": "Backend & DB",
-        "items": ["Node.js", "NestJS", "PHP", "Yii2", "PostgreSQL", "Redis", "REST API", "WebSocket"]
+        "items": ["Node.js", "NestJS", "PHP", "Yii2", "PostgreSQL", "Redis", "ClickHouse", "REST API", "WebSocket"]
       },
       {
         "title": "Data & UI",
@@ -427,7 +433,7 @@
       },
       {
         "title": "Styling",
-        "items": ["Tailwind CSS", "shadcn/ui", "Material UI", "SCSS", "Bootstrap", "GSAP"]
+        "items": ["Tailwind CSS", "shadcn/ui", "Reka UI", "Material UI", "SCSS", "Bootstrap", "GSAP"]
       },
       {
         "title": "CI/CD & Quality",

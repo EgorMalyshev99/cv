@@ -2,6 +2,7 @@
   <div>
     <SectionsHero />
     <SectionsPositioning />
+    <SectionsManagementSkills />
     <SectionsTechStack />
     <SectionsAiSkills />
     <SectionsAchievements />

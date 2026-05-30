@@ -24,7 +24,7 @@
 </template>
 
 <script setup lang="ts">
-import { PhChartLineUp, PhCircuitry, PhLightning, PhRocketLaunch } from '@phosphor-icons/vue'
+import { PhChartLineUp, PhCircuitry, PhLightning, PhRocketLaunch, PhUserPlus } from '@phosphor-icons/vue'
 interface AchievementItem {
   metric: string
   title: string
@@ -40,5 +40,5 @@ const items = computed(() =>
   }))
 )
 
-const achievementIcons = [PhLightning, PhRocketLaunch, PhChartLineUp, PhCircuitry]
+const achievementIcons = [PhLightning, PhRocketLaunch, PhChartLineUp, PhCircuitry, PhUserPlus]
 </script>
